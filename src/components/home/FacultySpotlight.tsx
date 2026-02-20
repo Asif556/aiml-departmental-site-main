@@ -32,9 +32,6 @@ const FacultySpotlight = () => (
             <p className="text-xs text-muted-foreground font-body mb-1">
               {member.designation}
             </p>
-            <p className="text-[11px] text-accent font-body font-medium">
-              {member.specialization.split(",")[0]}
-            </p>
           </Link>
         ))}
       </div>

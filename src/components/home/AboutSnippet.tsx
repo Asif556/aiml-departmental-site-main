@@ -14,10 +14,6 @@ const AboutSnippet = () => (
           <p className="text-[15px] text-muted-foreground leading-relaxed mb-6 font-body">
             {aboutSnippet}
           </p>
-          <p className="text-[15px] text-muted-foreground leading-relaxed mb-6 font-body">
-            Established in {new Date().getFullYear() - 7}, the department has rapidly grown to become a center of excellence
-            for AI research, with strong industry partnerships and an impressive track record of student placements.
-          </p>
           <Link
             to="/about"
             className="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:text-primary-light transition-colors font-body"
