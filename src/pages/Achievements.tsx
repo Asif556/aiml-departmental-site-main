@@ -1,7 +1,17 @@
+import { useState } from "react";
 import { Trophy, Award, Star, TrendingUp } from "lucide-react";
 import { achievements, fundedProjects } from "@/data/departmentData";
 
-const Achievements = () => (
+const Achievements = () => {
+  const [expandedItems, setExpandedItems] = useState<number[]>([]);
+
+  const toggleExpand = (index: number) => {
+    setExpandedItems(prev => 
+      prev.includes(index) ? prev.filter(i => i !== index) : [...prev, index]
+    );
+  };
+
+  return (
   <div>
     <section className="bg-primary py-16">
       <div className="container">
@@ -13,7 +23,7 @@ const Achievements = () => (
     <section className="py-16">
       <div className="container">
         {/* Rankings */}
-        <div className="section-header">
+        {/* <div className="section-header">
           <p className="section-label">Recognition</p>
           <h2 className="section-title">Rankings & Accreditations</h2>
         </div>
@@ -25,37 +35,7 @@ const Achievements = () => (
               <p className="text-xs text-primary-foreground/60 font-body mt-1">{r.body}</p>
             </div>
           ))}
-        </div>
-
-        {/* Faculty Awards */}
-        <div className="section-header">
-          <p className="section-label">Faculty</p>
-          <h2 className="section-title">Faculty Awards</h2>
-        </div>
-        <div className="overflow-x-auto mb-16">
-          <table className="w-full text-sm font-body">
-            <thead>
-              <tr className="border-b border-border text-left">
-                <th className="py-3 pr-4 font-semibold text-foreground">Award</th>
-                <th className="py-3 pr-4 font-semibold text-foreground">Recipient</th>
-                <th className="py-3 pr-4 font-semibold text-foreground">Awarding Body</th>
-                <th className="py-3 font-semibold text-foreground">Year</th>
-              </tr>
-            </thead>
-            <tbody>
-              {achievements.facultyAwards.map((a, i) => (
-                <tr key={i} className="border-b border-border/50 hover:bg-secondary/50 transition-colors">
-                  <td className="py-3 pr-4 text-foreground font-medium flex items-center gap-2">
-                    <Trophy className="w-4 h-4 text-accent shrink-0" /> {a.award}
-                  </td>
-                  <td className="py-3 pr-4 text-muted-foreground">{a.recipient}</td>
-                  <td className="py-3 pr-4 text-muted-foreground">{a.body}</td>
-                  <td className="py-3 text-muted-foreground">{a.year}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+        </div> */}
 
         {/* Student Achievements */}
         <div className="section-header">
@@ -63,21 +43,40 @@ const Achievements = () => (
           <h2 className="section-title">Student Achievements</h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
-          {achievements.studentAchievements.map((a, i) => (
-            <div key={i} className="bg-card border border-border rounded-lg p-5 card-hover">
-              <div className="flex items-start gap-3">
-                <Star className="w-5 h-5 text-accent shrink-0 mt-0.5" />
-                <div>
-                  <h3 className="font-display font-bold text-sm text-foreground mb-1">{a.student}</h3>
-                  <p className="text-sm text-muted-foreground font-body mb-1">{a.achievement}</p>
-                  <div className="flex items-center gap-2">
-                    <span className="text-[10px] bg-accent/10 text-accent px-2 py-0.5 rounded-full font-body font-medium">{a.rank}</span>
-                    <span className="text-xs text-muted-foreground font-body">{a.event} · {a.year}</span>
+          {achievements.studentAchievements.map((a, i) => {
+            const isExpanded = expandedItems.includes(i);
+            const description = a.description || "";
+            const truncatedDesc = description.length > 100 ? description.substring(0, 100) + "..." : description;
+            
+            return (
+              <div key={i} className="bg-card border border-border rounded-lg p-5 card-hover">
+                <div className="flex items-start gap-3">
+                  <Star className="w-5 h-5 text-accent shrink-0 mt-0.5" />
+                  <div className="flex-1">
+                    <h3 className="font-display font-bold text-sm text-foreground mb-1">{a.student}</h3>
+                    <p className="text-sm text-muted-foreground font-body mb-2">{a.achievement}</p>
+                    {description && (
+                      <p className="text-xs text-muted-foreground font-body mb-2">
+                        {isExpanded ? description : truncatedDesc}
+                      </p>
+                    )}
+                    <div className="flex items-center gap-2 mb-2">
+                      <span className="text-[10px] bg-accent/10 text-accent px-2 py-0.5 rounded-full font-body font-medium">{a.rank}</span>
+                      <span className="text-xs text-muted-foreground font-body">{a.event} · {a.year}</span>
+                    </div>
+                    {description && description.length > 100 && (
+                      <button
+                        onClick={() => toggleExpand(i)}
+                        className="text-xs text-primary hover:text-primary/80 font-body font-medium transition-colors"
+                      >
+                        {isExpanded ? "Show Less" : "Show More"}
+                      </button>
+                    )}
                   </div>
                 </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
 
         {/* Top Funded Projects */}
@@ -102,6 +101,7 @@ const Achievements = () => (
       </div>
     </section>
   </div>
-);
+  );
+};
 
 export default Achievements;

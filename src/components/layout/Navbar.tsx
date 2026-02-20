@@ -29,8 +29,8 @@ const Navbar = () => {
       <div className="container flex items-center justify-between h-[68px]">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2 shrink-0">
-          <div className="w-9 h-9 rounded-md bg-primary flex items-center justify-center text-primary-foreground font-mono font-bold text-sm">
-            AI
+          <div className="px-2 h-9 rounded-md bg-primary flex items-center justify-center text-primary-foreground font-mono font-bold text-xs">
+            CSE(AI)
           </div>
           <div className="hidden sm:block">
             <div className="font-display font-bold text-sm text-foreground leading-tight">{departmentInfo.shortName}</div>

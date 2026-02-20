@@ -36,7 +36,7 @@ const AcademicsOverview = () => (
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {[
-            { icon: BookOpen, label: "Programs Offered", href: "/academics/programs", desc: "B.Tech, M.Tech, Ph.D. details" },
+            { icon: BookOpen, label: "Programs Offered", href: "/academics/programs", desc: "B.Tech and Ph.D. programs" },
             { icon: FileText, label: "Curriculum & Syllabus", href: "/academics/curriculum", desc: "Semester-wise course structure" },
             { icon: Calendar, label: "Academic Calendar", href: "/academics/calendar", desc: "Key dates & exam schedule" },
           ].map((link) => (

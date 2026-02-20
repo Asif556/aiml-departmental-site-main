@@ -4,8 +4,10 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "@/components/layout/Layout";
+import ScrollToTop from "@/components/ScrollToTop";
 import Index from "./pages/Index";
 import About from "./pages/About";
+import VisionMission from "./pages/VisionMission";
 import Faculty from "./pages/Faculty";
 import FacultyProfile from "./pages/FacultyProfile";
 import Research from "./pages/Research";
@@ -35,12 +37,13 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           <Route element={<Layout />}>
             <Route path="/" element={<Index />} />
             <Route path="/about" element={<About />} />
             <Route path="/about/hod-message" element={<PlaceholderPage />} />
-            <Route path="/about/vision-mission" element={<PlaceholderPage />} />
+            <Route path="/about/vision-mission" element={<VisionMission />} />
             <Route path="/faculty" element={<Faculty />} />
             <Route path="/faculty/:id" element={<FacultyProfile />} />
             <Route path="/academics" element={<AcademicsOverview />} />

@@ -1,34 +1,33 @@
 import { Link } from "react-router-dom";
-import { ArrowRight } from "lucide-react";
-import { departmentInfo, aboutSnippet } from "@/data/departmentData";
+import { ArrowLeft } from "lucide-react";
 
-const About = () => (
+const VisionMission = () => (
   <div>
     {/* Hero */}
     <section className="bg-primary py-16">
       <div className="container">
-        <p className="text-accent text-[11px] font-bold uppercase tracking-[2px] mb-2 font-body">About Us</p>
-        <h1 className="font-display text-3xl md:text-[38px] font-bold text-primary-foreground">About the Department</h1>
+        <Link to="/about" className="inline-flex items-center gap-1 text-primary-foreground/70 text-sm font-body mb-3 hover:text-primary-foreground transition-colors">
+          <ArrowLeft className="w-4 h-4" /> Back to About
+        </Link>
+        <p className="text-accent text-[11px] font-bold uppercase tracking-[2px] mb-2 font-body">Our Vision</p>
+        <h1 className="font-display text-3xl md:text-[38px] font-bold text-primary-foreground">Vision & Mission</h1>
       </div>
     </section>
 
     <section className="py-16">
       <div className="container max-w-3xl">
         <div className="section-header">
-          <p className="section-label">Our Story</p>
-          <h2 className="section-title">Department Overview</h2>
-        </div>
-        <p className="text-[15px] text-muted-foreground leading-relaxed mb-6 font-body">{aboutSnippet}</p>
-
-        <div className="section-header mt-12">
           <p className="section-label">Our Vision</p>
-          <h2 className="section-title">Vision & Mission</h2>
+          <h2 className="section-title">Vision</h2>
         </div>
-        <blockquote className="border-l-4 border-accent pl-6 py-2 text-lg font-display text-foreground/80 italic mb-8">
+        <blockquote className="border-l-4 border-accent pl-6 py-2 text-lg font-display text-foreground/80 italic mb-12">
           "Our vision is to be the forerunner in AI and ML and to generate globally employable graduates with ethical principles who are dedicated to creating a thriving country."
         </blockquote>
 
-        <h3 className="font-display font-bold text-xl mb-4">Mission</h3>
+        <div className="section-header">
+          <p className="section-label">Our Mission</p>
+          <h2 className="section-title">Mission</h2>
+        </div>
         <ul className="space-y-3 mb-8">
           {[
             "To make a consistent effort to establish and maintain an academic atmosphere that prioritizes research and publishing.",
@@ -42,9 +41,9 @@ const About = () => (
           ))}
         </ul>
 
-        <div className="flex gap-4">
-          <Link to="/about/hod-message" className="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:text-primary-light transition-colors font-body">
-            Message from HoD <ArrowRight className="w-4 h-4" />
+        <div className="flex gap-4 mt-12">
+          <Link to="/about" className="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:text-primary-light transition-colors font-body">
+            <ArrowLeft className="w-4 h-4" /> Back to About
           </Link>
         </div>
       </div>
@@ -52,4 +51,4 @@ const About = () => (
   </div>
 );
 
-export default About;
+export default VisionMission;

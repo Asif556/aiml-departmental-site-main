@@ -46,11 +46,11 @@ const HeroSection = () => (
             Explore Programs
           </Link>
           <Link
-            to="/faculty"
+            to="/research"
             className="inline-flex items-center gap-2 px-6 py-3 border-2 border-primary-foreground/60 text-primary-foreground font-semibold text-sm rounded-md hover:bg-primary-foreground/10 transition-colors font-body"
           >
             <Users className="w-4 h-4" />
-            Meet Our Faculty
+            View Research
           </Link>
         </div>
       </div>

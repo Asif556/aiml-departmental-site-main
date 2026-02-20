@@ -2,7 +2,7 @@ import { useState } from "react";
 import { X } from "lucide-react";
 import { galleryImages } from "@/data/departmentData";
 
-const categories = ["all", "labs", "events", "students", "faculty", "campus"] as const;
+const categories = ["all", "labs", "events", "students", "campus"] as const;
 
 const Gallery = () => {
   const [filter, setFilter] = useState<string>("all");

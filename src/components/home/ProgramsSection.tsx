@@ -11,7 +11,7 @@ const ProgramsSection = () => (
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {programs.filter((p) => p.name.startsWith("B.Tech")).map((program) => (
+        {programs.map((program) => (
           <div
             key={program.name}
             className="bg-card border border-border rounded-lg p-6 card-hover"

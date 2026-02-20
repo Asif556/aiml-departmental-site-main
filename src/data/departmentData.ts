@@ -1,23 +1,22 @@
 export const departmentInfo = {
-  name: "Computer Science Engineering (AI)",
+  name: "Computer Science & Engineering (Artificial Intelligence)",
   shortName: "CSE (AI)",
   institution: "University of Engineering & Management, Kolkata",
   institutionShort: "UEM KOLKATA",
   tagline: "Shaping the engineers of tomorrow through research, innovation, and excellence.",
   established: 2019,
-  phone: "+91 33 6652 2601",
-  email: "hod.cseaiml@uem.edu.in",
+  phone: "+91 94747 33974",
+  email: "sudipta.sahana@uem.edu.in",
   address: "Department of CSE (AI), UEM Kolkata, University Area, Plot No. III, B/5, New Town Rd, Action Area III, Newtown, Kolkata - 700160, West Bengal, India",
 };
 
 export const stats = [
-  { label: "Faculty Members", value: 20 },
-  { label: "Students Enrolled", value: 900 },
+  { label: "Students Enrolled", value: 915 },
   { label: "Research Publications", value: 180 },
-  { label: "Placement Rate", value: 95, suffix: "%" },
+  { label: "Placement + Higher Qualification", value: 100, suffix: "%" },
 ];
 
-export const aboutSnippet = "The Department of Computer Science Engineering (AI) is committed to fostering academic excellence and cutting-edge research in artificial intelligence, machine learning, and data science. With a strong emphasis on both theoretical foundations and practical applications, we prepare students to lead innovation in an increasingly data-driven world.";
+export const aboutSnippet = "One of the newest and most cutting-edge engineering departments of the University of Engineering and Management, Kolkata, is the Department of Computer Science & Engineering (Artificial Intelligence), or CSE(AI). It began operations in the academic year 2020–2021. The main goal of this department is to teach fundamental ideas like computational thinking, object-oriented programming, data structures, algorithms, machine learning, deep learning, database management systems, artificial intelligence (including search strategies and knowledge representation), natural language processing, and Python programming for problem-solving. As a result, students will have a thorough understanding of artificial intelligence and machine learning through the application of real-world issues in a wide range of application domains, including speech and natural language processing, computer vision, cognitive sciences, and others. Throughout their studies, students will get expertise in a variety of professional electives given by machine learning, computer vision, voice and natural language processing, data analytics, cyber security, blockchain, cloud computing and generative AI domain verticals.";
 
 export const programs = [
   {
@@ -31,22 +30,12 @@ export const programs = [
     careerOutcomes: ["ML Engineer", "Data Scientist", "AI Researcher", "Software Engineer"],
   },
   {
-    name: "M.Tech in AI",
-    duration: "2 Years",
-    intake: 25,
-    description: "An advanced program focusing on deep learning, NLP, computer vision, and intelligent systems with thesis-driven research.",
-    link: "/academics/programs",
-    eligibility: "GATE qualified. B.Tech/BE in CS/IT/ECE or equivalent.",
-    specializations: ["Generative AI", "Reinforcement Learning", "Edge AI", "AI Ethics"],
-    careerOutcomes: ["Research Scientist", "Senior ML Engineer", "AI Architect", "PhD Scholar"],
-  },
-  {
     name: "Ph.D. in CSE (AI)",
     duration: "3–5 Years",
     intake: 10,
     description: "Doctoral research program with specializations in reinforcement learning, generative AI, and interdisciplinary computing.",
     link: "/academics/programs",
-    eligibility: "M.Tech/ME with valid NET/GATE score or published research.",
+    eligibility: "Master's degree with valid NET/GATE score or published research.",
     specializations: ["Autonomous Systems", "Federated Learning", "Explainable AI", "Quantum ML"],
     careerOutcomes: ["Professor", "Principal Scientist", "Research Lab Director", "CTO"],
   },
@@ -277,12 +266,62 @@ export const achievements = {
     { award: "INAE Young Engineer Award", recipient: "Dr. Siddharth Rao", body: "INAE", year: 2023 },
   ],
   studentAchievements: [
-    { student: "Arjun Nambiar", achievement: "Google Summer of Code — TensorFlow", event: "GSoC 2025", year: 2025, rank: "Selected" },
-    { student: "Priya Venkat", achievement: "ACM ICPC Asia West Finalist", event: "ICPC 2025", year: 2025, rank: "Top 30" },
-    { student: "Team AlphaNet", achievement: "Smart India Hackathon Winner", event: "SIH 2025", year: 2025, rank: "1st Place" },
-    { student: "Nikhil Das", achievement: "Best Paper Award — IEEE Student Conference", event: "IEEE CSNT 2024", year: 2024, rank: "Winner" },
-    { student: "Meghana Kulkarni", achievement: "Microsoft Imagine Cup — National Finalist", event: "Imagine Cup 2024", year: 2024, rank: "Top 10" },
-    { student: "Ravi Teja", achievement: "Google Summer of Code — PyTorch", event: "GSoC 2024", year: 2024, rank: "Selected" },
+    { 
+      student: "Team led by Anwesha Ghosh", 
+      achievement: "Smart India Hackathon (SIH) Winner", 
+      event: "SIH 2025", 
+      year: 2025, 
+      rank: "1st Place",
+      description: "Led by Anwesha Ghosh, the team secured the winner's title by delivering a real-time solution to an industry-level problem. Their innovative use of AI and system design stood out among 200+ national finalists."
+    },
+    { 
+      student: "Team led by Avik Agarwala", 
+      achievement: "Arjuna 1.0 Hackathon – Winner", 
+      event: "North East Tech Summit", 
+      year: 2025, 
+      rank: "1st Place",
+      description: "The CSE (AI & ML) team led by Avik Agarwala secured 1st place among 669 participants at the North East Tech Summit's Arjuna 1.0 Hackathon, hosted by NIT Agartala, for their AI-based Landslide Detection & Warning System. The team also won the summit's quiz competition."
+    },
+    { 
+      student: "Team led by Tonima Das", 
+      achievement: "Best GenAI Track Winner", 
+      event: "Diversion 2K25", 
+      year: 2025, 
+      rank: "Winner",
+      description: "The team from CSE (AI & ML) led by Tonima Das won the Best AI Hack at Diversion 2K25 for developing Pocket Legal Aid, a multilingual AI chatbot that delivers Constitution-based legal guidance to underserved communities."
+    },
+    { 
+      student: "Department Team", 
+      achievement: "Tech Expo (Senior) – 2nd Position", 
+      event: "IIT Guwahati", 
+      year: 2025, 
+      rank: "2nd Position",
+      description: "The department team secured 2nd position at this national innovation expo, earning a cash prize of ₹40,000. The project was mentored by Prof. Dr. Sudipta Sahana, HOD, CSE (AI)"
+    },
+    { 
+      student: "Department Team", 
+      achievement: "InnoFusion 2.0 - 2nd Position", 
+      event: "InnoFusion 2.0", 
+      year: 2025, 
+      rank: "2nd Position",
+      description: "Secured 2nd position with an AI-powered DevOps solution, demonstrating innovative automation and intelligent deployment capabilities."
+    },
+    { 
+      student: "Department Team", 
+      achievement: "HackSpire 2025 - 1st Runner Up & Best Innovation Prize", 
+      event: "HackSpire 2025", 
+      year: 2025, 
+      rank: "1st Runner Up",
+      description: "In a 30-hour sprint, prioritized utility over complexity to win the Innovation Track. The ultimate validation that deep tech needs to solve real problems."
+    },
+    { 
+      student: "Department Team", 
+      achievement: "Metamorph 2025 - 2nd Runner-up", 
+      event: "GNIT Sodepur", 
+      year: 2025, 
+      rank: "2nd Runner-up",
+      description: "Secured 2nd Runner-up position at Guru Nanak Institute of Technology, Sodepur. An intense, high-energy event that pushed thinking sharper, building faster, and innovating under pressure in Robotics & AI."
+    },
   ],
   rankings: [
     { body: "NIRF", metric: "Engineering Rankings 2025", rank: "#12" },
@@ -340,7 +379,7 @@ export const navLinks = [
       { label: "Vision & Mission", href: "/about/vision-mission" },
     ],
   },
-  { label: "Faculty", href: "/faculty" },
+  // { label: "Faculty", href: "/faculty" },
   {
     label: "Academics",
     href: "/academics",

@@ -2,7 +2,7 @@ import { useState } from "react";
 import { GraduationCap, Clock, Users, CheckCircle, Briefcase } from "lucide-react";
 import { programs } from "@/data/departmentData";
 
-const tabs = ["B.Tech", "M.Tech", "Ph.D."];
+const tabs = ["B.Tech", "Ph.D."];
 
 const AcademicsPrograms = () => {
   const [active, setActive] = useState(0);

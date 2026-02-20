@@ -39,7 +39,7 @@ const CountUp = ({ target, suffix = "" }: { target: number; suffix?: string }) =
 const StatsStrip = () => (
   <section className="bg-card border-b-2 border-accent/30">
     <div className="container py-8">
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-0">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-0">
         {stats.map((stat, i) => (
           <div
             key={stat.label}

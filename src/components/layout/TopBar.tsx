@@ -16,10 +16,10 @@ const TopBar = () => (
           <Mail className="w-3 h-3" />
           {departmentInfo.email}
         </a>
-        <a href="#" className="flex items-center gap-1 opacity-80 hover:opacity-100 transition-opacity">
+        {/* <a href="#" className="flex items-center gap-1 opacity-80 hover:opacity-100 transition-opacity">
           <ExternalLink className="w-3 h-3" />
           Portal Login
-        </a>
+        </a> */}
       </div>
     </div>
   </div>

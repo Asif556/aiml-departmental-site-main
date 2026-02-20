@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Mail, Phone, MapPin, Youtube, Linkedin } from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
 import { departmentInfo } from "@/data/departmentData";
 
 const footerLinks = [
@@ -7,7 +7,6 @@ const footerLinks = [
     title: "Quick Links",
     links: [
       { label: "About", href: "/about" },
-      { label: "Faculty", href: "/faculty" },
       { label: "Academics", href: "/academics" },
       { label: "Research", href: "/research" },
     ],
@@ -84,18 +83,10 @@ const Footer = () => (
       </div>
 
       {/* Bottom Bar */}
-      <div className="mt-10 pt-6 border-t border-primary-foreground/10 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div className="mt-10 pt-6 border-t border-primary-foreground/10 flex flex-col sm:flex-row items-center justify-center gap-4">
         <p className="text-xs opacity-60">
           © {new Date().getFullYear()} {departmentInfo.name}, {departmentInfo.institutionShort}. All rights reserved.
         </p>
-        <div className="flex items-center gap-3">
-          <a href="#" className="opacity-60 hover:opacity-100 transition-opacity" aria-label="LinkedIn">
-            <Linkedin className="w-5 h-5" />
-          </a>
-          <a href="#" className="opacity-60 hover:opacity-100 transition-opacity" aria-label="YouTube">
-            <Youtube className="w-5 h-5" />
-          </a>
-        </div>
       </div>
     </div>
   </footer>
