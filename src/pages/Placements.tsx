@@ -1,5 +1,5 @@
-import { TrendingUp, Quote } from "lucide-react";
-import { placementStats, placementTestimonials, recruiters, industryMous } from "@/data/departmentData";
+import { TrendingUp, Quote, GraduationCap, Users } from "lucide-react";
+import { placementStats, higherEducation, placementTestimonials, recruiters, industryMous } from "@/data/departmentData";
 
 const Placements = () => (
   <div>
@@ -10,45 +10,86 @@ const Placements = () => (
       </div>
     </section>
 
-    {/* Hero Stat */}
+    {/* Hero Stats */}
     <section className="py-12 bg-secondary">
-      <div className="container text-center">
-        <div className="inline-flex items-center gap-3 bg-card border border-border rounded-lg px-8 py-6">
-          <TrendingUp className="w-10 h-10 text-accent" />
-          <div className="text-left">
-            <p className="font-mono font-bold text-4xl text-primary">{placementStats[0].highestPackage}</p>
-            <p className="text-sm text-muted-foreground font-body">Highest Package ({placementStats[0].year})</p>
+      <div className="container">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+          <div className="bg-card border border-border rounded-lg px-6 py-5 text-center">
+            <Users className="w-8 h-8 text-accent mx-auto mb-2" />
+            <p className="font-mono font-bold text-3xl text-primary mb-1">{placementStats[0].totalStudents}</p>
+            <p className="text-xs text-muted-foreground font-body">Total Students</p>
           </div>
+          <div className="bg-card border border-border rounded-lg px-6 py-5 text-center">
+            <TrendingUp className="w-8 h-8 text-accent mx-auto mb-2" />
+            <p className="font-mono font-bold text-3xl text-primary mb-1">{placementStats[0].studentsPlaced}</p>
+            <p className="text-xs text-muted-foreground font-body">Students Placed</p>
+          </div>
+          {/* <div className="bg-card border border-border rounded-lg px-6 py-5 text-center">
+            <GraduationCap className="w-8 h-8 text-accent mx-auto mb-2" />
+            <p className="font-mono font-bold text-3xl text-primary mb-1">{placementStats[0].placementPercentage}%</p>
+            <p className="text-xs text-muted-foreground font-body">Placement Rate</p>
+          </div> */}
         </div>
       </div>
     </section>
 
     <section className="py-16">
       <div className="container">
-        {/* Year-wise Stats */}
+        {/* Placement Statistics */}
         <div className="section-header">
           <p className="section-label">Track Record</p>
-          <h2 className="section-title">Year-wise Placement Statistics</h2>
+          <h2 className="section-title">Placement Statistics</h2>
         </div>
         <div className="overflow-x-auto mb-16">
           <table className="w-full text-sm font-body">
             <thead>
               <tr className="border-b border-border text-left">
-                <th className="py-3 pr-4 font-semibold text-foreground">Year</th>
-                <th className="py-3 pr-4 font-semibold text-foreground">Students Placed</th>
-                <th className="py-3 pr-4 font-semibold text-foreground">Avg Package</th>
-                <th className="py-3 pr-4 font-semibold text-foreground">Highest Package</th>
-                <th className="py-3 font-semibold text-foreground">Companies Visited</th>
+                <th className="py-3 pr-4 font-semibold text-foreground">Batch</th>
+                <th className="py-3 pr-4 font-semibold text-foreground">Total Students</th>
+                <th className="py-3 pr-4 font-semibold text-foreground">Eligible Students</th>
+                <th className="py-3 font-semibold text-foreground">Students Placed</th>
+                {/* <th className="py-3 font-semibold text-foreground">Percentage</th> */}
               </tr>
             </thead>
             <tbody>
               {placementStats.map(s => (
-                <tr key={s.year} className="border-b border-border/50 hover:bg-secondary/50 transition-colors">
-                  <td className="py-3 pr-4 font-medium text-foreground">{s.year}</td>
-                  <td className="py-3 pr-4 text-muted-foreground">{s.studentsPlaced}</td>
-                  <td className="py-3 pr-4 font-mono text-foreground">{s.avgPackage}</td>
-                  <td className="py-3 pr-4 font-mono text-foreground">{s.highestPackage}</td>
-                  <td className="py-3 text-muted-foreground">{s.companiesVisited}</td>
+                <tr key={s.batch} className="border-b border-border/50 hover:bg-secondary/50 transition-colors">
+                  <td className="py-3 pr-4 font-medium text-foreground">{s.batch} (till June)</td>
+                  <td className="py-3 pr-4 text-muted-foreground">{s.totalStudents}</td>
+                  <td className="py-3 pr-4 text-muted-foreground">
+                    {s.eligibleStudents}
+                    <span className="text-xs block text-muted-foreground/70">({s.eligibilityCriteria})</span>
+                  </td>
+                  <td className="py-3 font-mono text-foreground">{s.studentsPlaced}</td>
+                  {/* <td className="py-3 font-mono text-foreground">{s.placementPercentage}%</td> */}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
+        {/* Pursuing Higher Education */}
+        <div className="section-header">
+          <p className="section-label">Academic Excellence</p>
+          <h2 className="section-title">Pursuing Higher Education</h2>
+        </div>
+        <div className="overflow-x-auto mb-16">
+          <table className="w-full text-sm font-body">
+            <thead>
+              <tr className="border-b border-border text-left">
+                <th className="py-3 pr-4 font-semibold text-foreground">Name</th>
+                <th className="py-3 pr-4 font-semibold text-foreground">Batch</th>
+                <th className="py-3 font-semibold text-foreground">Higher Study</th>
+              </tr>
+            </thead>
+            <tbody>
+              {higherEducation.map(student => (
+                <tr key={student.name} className="border-b border-border/50 hover:bg-secondary/50 transition-colors">
+                  <td className="py-3 pr-4 font-medium text-foreground">{student.name}</td>
+                  <td className="py-3 pr-4 text-muted-foreground">{student.batch}</td>
+                  <td className="py-3 text-muted-foreground">
+                    {student.program}{student.institution && ` - ${student.institution}`}
+                  </td>
                 </tr>
               ))}
             </tbody>
@@ -69,7 +110,7 @@ const Placements = () => (
         </div>
 
         {/* Testimonials */}
-        <div className="section-header">
+        {/* <div className="section-header">
           <p className="section-label">Student Stories</p>
           <h2 className="section-title">Testimonials</h2>
         </div>
@@ -84,10 +125,10 @@ const Placements = () => (
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
 
         {/* Industry MoUs */}
-        <div className="section-header">
+        {/* <div className="section-header">
           <p className="section-label">Collaborations</p>
           <h2 className="section-title">Industry MoUs</h2>
         </div>
@@ -110,7 +151,7 @@ const Placements = () => (
               ))}
             </tbody>
           </table>
-        </div>
+        </div> */}
       </div>
     </section>
   </div>

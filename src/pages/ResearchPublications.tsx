@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { ExternalLink } from "lucide-react";
-import { publications } from "@/data/departmentData";
+import { publications, annexures } from "@/data/departmentData";
 
-const years = [...new Set(publications.map(p => p.year))].sort((a, b) => b - a);
-const types = ["all", "journal", "conference", "book_chapter"] as const;
+const allPublications = [...publications.map(p => ({ ...p, category: 'publication' as const })), ...annexures.map(a => ({ ...a, category: 'annexure' as const }))];
+const years = [...new Set(allPublications.map(p => p.year))].sort((a, b) => b - a);
+const types = ["all", "journal", "conference", "book_chapter", "annexure"] as const;
 
 const ResearchPublications = () => {
   const [yearFilter, setYearFilter] = useState<number | "all">("all");
@@ -22,9 +23,13 @@ const ResearchPublications = () => {
     });
   };
 
-  const filtered = publications.filter(p => {
+  const filtered = allPublications.filter(p => {
     if (yearFilter !== "all" && p.year !== yearFilter) return false;
-    if (typeFilter !== "all" && p.type !== typeFilter) return false;
+    if (typeFilter !== "all") {
+      if (typeFilter === "annexure" && p.category !== "annexure") return false;
+      if (typeFilter !== "annexure" && p.category === "annexure") return false;
+      if (typeFilter !== "annexure" && p.type !== typeFilter) return false;
+    }
     return true;
   });
 
@@ -62,7 +67,7 @@ const ResearchPublications = () => {
                     typeFilter === t ? "bg-primary text-primary-foreground" : "bg-secondary text-foreground hover:bg-secondary/80"
                   }`}
                 >
-                  {t === "all" ? "All" : t === "book_chapter" ? "Book Chapter" : t}
+                  {t === "all" ? "All" : t === "book_chapter" ? "Book Chapter" : t === "annexure" ? "Annexure" : t}
                 </button>
               ))}
             </div>
@@ -98,19 +103,41 @@ const ResearchPublications = () => {
                           <p className="text-sm text-muted-foreground font-body mb-2">{p.authors.join(", ")}</p>
                           <p className="text-sm text-muted-foreground font-body">{p.journal}</p>
                           <div className="flex gap-2 mt-2">
-                            <span className="text-[10px] bg-primary/5 text-primary px-2 py-0.5 rounded-full font-body font-medium capitalize">{p.type === "book_chapter" ? "Book Chapter" : p.type}</span>
-                            <span className="text-[10px] bg-accent/10 text-accent px-2 py-0.5 rounded-full font-body font-medium">{p.indexedIn}</span>
+                            <span className="text-[10px] bg-primary/5 text-primary px-2 py-0.5 rounded-full font-body font-medium capitalize">{p.category === 'annexure' ? 'Annexure' : (p.type === "book_chapter" ? "Book Chapter" : p.type)}</span>
+                            {(p as any).indexedIn && <span className="text-[10px] bg-accent/10 text-accent px-2 py-0.5 rounded-full font-body font-medium">{(p as any).indexedIn}</span>}
                           </div>
                         </div>
-                        <a 
-                          href={`https://scholar.google.com/scholar?q=${encodeURIComponent(p.title)}`}
-                          target="_blank" 
-                          rel="noreferrer" 
-                          className="text-primary hover:text-primary-light transition-colors shrink-0"
-                          title="Search on Google Scholar"
-                        >
-                          <ExternalLink className="w-4 h-4" />
-                        </a>
+                        {(p as any).link ? (
+                          <a 
+                            href={(p as any).link}
+                            target="_blank" 
+                            rel="noreferrer" 
+                            className="text-primary hover:text-primary-light transition-colors shrink-0"
+                            title="View Document"
+                          >
+                            <ExternalLink className="w-4 h-4" />
+                          </a>
+                        ) : (p as any).doi ? (
+                          <a 
+                            href={(p as any).doi}
+                            target="_blank" 
+                            rel="noreferrer" 
+                            className="text-primary hover:text-primary-light transition-colors shrink-0"
+                            title="View DOI"
+                          >
+                            <ExternalLink className="w-4 h-4" />
+                          </a>
+                        ) : (
+                          <a 
+                            href={`https://scholar.google.com/scholar?q=${encodeURIComponent(p.title)}`}
+                            target="_blank" 
+                            rel="noreferrer" 
+                            className="text-primary hover:text-primary-light transition-colors shrink-0"
+                            title="Search on Google Scholar"
+                          >
+                            <ExternalLink className="w-4 h-4" />
+                          </a>
+                        )}
                       </div>
                     </div>
                   );

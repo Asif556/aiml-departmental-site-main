@@ -14,7 +14,7 @@ export const stats = [
   { label: "Students Enrolled", value: 915 },
   { label: "Research Publications", value: 180 },
   { label: "Projects Ongoing", value: 28 },
-  { label: "Placement + Higher Qualification", value: 100, suffix: "%" },
+  { label: "Placement + higher studies", value: 100, suffix: "%" },
 ];
 
 export const aboutSnippet = "One of the newest and most cutting-edge engineering departments of the Institute of Engineering & Management, Kolkata (School of University of Engineering and Management, Kolkata), is the Department of Computer Science & Engineering (Artificial Intelligence), or CSE(AI). It began operations in the academic year 2020–2021. The main goal of this department is to teach fundamental ideas like computational thinking, object-oriented programming, data structures, algorithms, machine learning, deep learning, database management systems, artificial intelligence (including search strategies and knowledge representation), natural language processing, and Python programming for problem-solving. As a result, students will have a thorough understanding of artificial intelligence and machine learning through the application of real-world issues in a wide range of application domains, including speech and natural language processing, computer vision, cognitive sciences, and others. Throughout their studies, students will get expertise in a variety of professional electives given by machine learning, computer vision, voice and natural language processing, data analytics, cyber security, blockchain, cloud computing and generative AI domain verticals.";
@@ -204,6 +204,46 @@ export const fundedProjects = [
   { id: 18, title: "System for water bodies", pi: "Prof. Sramana Mukherjee", coPi: "", agency: "Internal", amount: "₹1,00,000", duration: "15.02.2025 – 24.04.2025", status: "completed" as const, year: 2025 },
 ];
 
+export const finalYearProjects = [
+  { id: 1, title: "Steganographic Key Embedding in AI - Generated Images", guide: "Prof. Aniruddha Das", year: 2025, batch: "2021-2025" as const, semester: "8th Semester" },
+  { id: 2, title: "MEDI-BOT", guide: "Prof. Amit Kumar", year: 2025, batch: "2021-2025" as const, semester: "8th Semester" },
+  { id: 3, title: "Enhanced AI Framework for Precise Crater Detection and Planetary Surface Analysis", guide: "Prof. (Dr.) Sudipta Sahana", year: 2025, batch: "2021-2025" as const, semester: "8th Semester" },
+  { id: 4, title: "Federated learning with fair contribution scoring", guide: "Prof. Anjan Kumar Payra", year: 2025, batch: "2021-2025" as const, semester: "8th Semester" },
+  { id: 5, title: "Anomaly Detection in Human Task performance with Video-based Contextual reasoning", guide: "Prof. Sramana Mukherjee", year: 2025, batch: "2021-2025" as const, semester: "8th Semester" },
+  { id: 6, title: "Beyond the Illusion: Identifying and Preventing DeepFake Manipulation", guide: "Prof. Anasuya Sengupta", year: 2025, batch: "2021-2025" as const, semester: "8th Semester" },
+  { id: 7, title: "AI BASED DRUG RECOMMENDATION AND DISEASES PREDICTION WITH PATIENT ASSISTANCE SYSTEM", guide: "Dr. Aniruddha Ghosh", year: 2025, batch: "2021-2025" as const, semester: "8th Semester" },
+  { id: 8, title: "Care Nexus: AI -Driven multi disease Predictor", guide: "Prof. Amit Kumar", year: 2025, batch: "2021-2025" as const, semester: "8th Semester" },
+  { id: 9, title: "GenX: AI-Powered Gemstone Visualization Analysis and Prediction", guide: "Prof. Anasuya Sengupta", year: 2025, batch: "2021-2025" as const, semester: "8th Semester" },
+  { id: 10, title: "ML-Based Multi-Disease Prediction System", guide: "Dr. Namrata Shaw", year: 2025, batch: "2021-2025" as const, semester: "8th Semester" },
+  { id: 11, title: "Rainfall Prediction by Machine learning", guide: "Dr. Harshit Srivastava", year: 2025, batch: "2021-2025" as const, semester: "8th Semester" },
+  { id: 12, title: "BookMyHotel-A hotel recommendation system using customer feed", guide: "Prof. Anjan Kumar Payra", year: 2025, batch: "2021-2025" as const, semester: "8th Semester" },
+  { id: 13, title: "TASKETER: A PRIORITY BASED TASK MANAGEMENT SYSTEM", guide: "Prof. Argha Banerjee", year: 2025, batch: "2021-2025" as const, semester: "8th Semester" },
+  { id: 14, title: "Hotel Recommendation Systemusing NLP", guide: "Dr. Namrata Shaw", year: 2025, batch: "2021-2025" as const, semester: "8th Semester" },
+  { id: 15, title: "SIGN LANGUAGE RECOGNIZER", guide: "Prof. Aniruddha Das", year: 2025, batch: "2021-2025" as const, semester: "8th Semester" },
+  { id: 16, title: "Aspect based sentiment analysis on movie reviews using topic modeling and bert", guide: "Prof. Anjan Kumar Payra", year: 2025, batch: "2021-2025" as const, semester: "8th Semester" },
+  { id: 17, title: "FAKE NEWS DETECTION USING MACHINE LEARNING", guide: "Prof. Anasuya Sengupta", year: 2025, batch: "2021-2025" as const, semester: "8th Semester" },
+  { id: 18, title: "Enhancing Flight Delay Prediction and Terminal-Aware Flight Recommendation with a Spatio-Temporal Graph Attention Network: A Graph-Based Approach to Modeling Airport Interdependencies", guide: "Prof. (Dr.) Sudipta Sahana", year: 2025, batch: "2021-2025" as const, semester: "8th Semester" },
+  { id: 19, title: "Emotion detection through EEG signals: A comparitive Machine Learning and Explainable approach", guide: "Prof. Sramana Mukherjee", year: 2025, batch: "2021-2025" as const, semester: "8th Semester" },
+  { id: 20, title: "Triyal Chatbot with RAG", guide: "Prof. Amit Kumar", year: 2025, batch: "2021-2025" as const, semester: "8th Semester" },
+  { id: 21, title: "PETCAREPAL", guide: "Prof. Aniruddha Das", year: 2025, batch: "2021-2025" as const, semester: "8th Semester" },
+  { id: 22, title: "Cancer Analysis using Data Analytics Approach", guide: "Dr. Harshit Srivastava", year: 2025, batch: "2021-2025" as const, semester: "8th Semester" },
+  { id: 23, title: "NON-GPS BASED CAR LOCATION TRACKING SYSTEM", guide: "Prof. (Dr.) Sudipta Sahana", year: 2025, batch: "2021-2025" as const, semester: "8th Semester" },
+  { id: 24, title: "SMART HOSTEL: AI - DRIVEN INTELLIGENT ROOMMATE MATCHING", guide: "Prof. Argha Banerjee", year: 2025, batch: "2021-2025" as const, semester: "8th Semester" },
+  { id: 25, title: "Using Deep Learning Algorithms for Multiclass Classification of Brain Tumor", guide: "Dr. Namrata Shaw", year: 2025, batch: "2021-2025" as const, semester: "8th Semester" },
+  { id: 26, title: "Use of AI in NPC Behavior and Terrain Generation in Game", guide: "Dr. Harshit Srivastava", year: 2025, batch: "2021-2025" as const, semester: "8th Semester" },
+  { id: 27, title: "AI-Driven Thermal Imaging: A Web-Based Tool for Non-Invasive Medical Diagnostics", guide: "Dr. Aniruddha Ghosh", year: 2025, batch: "2021-2025" as const, semester: "8th Semester" },
+  { id: 28, title: "Identifying the severity of cough with audio analysis and pneumonia detection with x-ray analysis", guide: "Prof. Sramana Mukherjee", year: 2025, batch: "2021-2025" as const, semester: "8th Semester" },
+  { id: 29, title: "PLANT DISEASE PREDICTION USING DEEP LEARNING", guide: "Prof. Debalatta Chatterjee", year: 2025, batch: "2021-2025" as const, semester: "8th Semester" },
+  { id: 30, title: "Solvent: AI-Powered numero leaf disease detection system with interactive support", guide: "Prof. Anjan Kumar Payra", year: 2025, batch: "2021-2025" as const, semester: "8th Semester" },
+  { id: 31, title: "Neuro Block", guide: "Prof. Amit Kumar", year: 2025, batch: "2021-2025" as const, semester: "8th Semester" },
+  { id: 32, title: "Attention-Enhanced CNNs with Contrastive Counterfactual Explanations on MNIST", guide: "Prof. Sramana Mukherjee", year: 2025, batch: "2021-2025" as const, semester: "8th Semester" },
+  { id: 33, title: "Synthetic Data Generation Using Large Language Models for Information Retrieval on Code Data", guide: "Prof. Anasuya Sengupta", year: 2025, batch: "2021-2025" as const, semester: "8th Semester" },
+  { id: 34, title: "AI-Based Detection of Polycystic Ovarian Syndrome Using Machine Learning Approaches", guide: "Prof. Debalatta Chatterjee", year: 2025, batch: "2021-2025" as const, semester: "8th Semester" },
+  { id: 35, title: "Transportation Route Optimization Using Gen AI", guide: "Prof. Aniruddha Das", year: 2025, batch: "2021-2025" as const, semester: "8th Semester" },
+  { id: 36, title: "SumCraft", guide: "Dr. Harshit Srivastava", year: 2025, batch: "2021-2025" as const, semester: "8th Semester" },
+  { id: 37, title: "Handling Data Securely with Blockchain R1 Model from Local Server", guide: "Dr. Aniruddha Ghosh", year: 2025, batch: "2021-2025" as const, semester: "8th Semester" },
+];
+
 export const publications = [
   { id: 1, title: "Directed Interaction Network Prediction Using Functional Activity and Topological Approach", authors: ["Anjan Kumar Payra", "Banani Saha", "Anupam Ghosh"], journal: "The International Conference on Web 6.0 and Industry 6.0 (WIN 6.0 2025)", year: 2025, type: "conference" as const, indexedIn: "Scopus" as const },
   { id: 2, title: "An Efficient Image Classification Technique using Transfer Learning Mechanism in the Context of Tumor Detection", authors: ["Anasuya Sengupta", "Alok Ranjan Pal"], journal: "Fifth IEEE Sponsored International Conference on Advances in Electrical, Computing, Communications and Sustainable Technologies (ICAECCT 2025)", year: 2025, type: "conference" as const, indexedIn: "Scopus" as const },
@@ -236,6 +276,41 @@ export const publications = [
   { id: 29, title: "AI-Driven Thermal Imaging: A Comprehensive Web-Based Tool for Non-Invasive Medical Diagnostics", authors: ["Aniruddha Ghosh", "Sayan Sangha Pal", "Sumeeba Das", "Spardan Bhattacharya", "Arjit Bhattacharya", "Nilanjana De", "Sudipta Sahana"], journal: "3rd International Conference on Intelligent Systems, Advanced Computing and Communication (ISACC), 2025", year: 2025, type: "conference" as const, indexedIn: "Scopus" as const },
 ];
 
+export const annexures = [
+  { id: 1, title: "A Machine Learning-Powered Navigation System and Air Quality: Optimizing Traffic Flow and Air Quality", authors: ["Nilanjana De", "Arijit Bhattacharya", "Sumedha Das", "Sayan Singdha Pal", "Sudpta Sahana"], journal: "Doctoral Symposium on Human Centered Computing, 2024 (HUMAN - 2024), March 30 – 31, 2024", year: 2024, type: "conference" as const },
+  { id: 2, title: "Machine Learning Driven Blood Demand Prediction Model", authors: ["Srijan Bandyopadhyay", "Hrishita Dey", "Moubsree Karmakar", "Sumeli Dedeka", "Anasuya Das", "Sudpta Sahana"], journal: "3rd International Conference on Human-Centric Smart Computing (ICHCSC 2024), July 25th-26th, 2024", year: 2024, type: "conference" as const },
+  { id: 3, title: "Cement Quality Prediction and Fraud Detection by using AI", authors: ["Aniruddha Das", "Irfan Wahid", "Debmallya Panja"], journal: "Recent Advances in Operations Research and Business Analytics (RAORBA-2024), July 2024", year: 2024, type: "conference" as const },
+  { id: 4, title: "Empowering 5G Networks: Machine Learning Solutions for Optimization Challenges", authors: ["Anasuya Sengupta", "Aritra Paul", "Rounak Bhuwas", "Debjyoti Dutta", "Aakun Paul", "Uday Das"], journal: "International Conference on Human-Centric Smart Computing (ICHCSC-2024), July 2024", year: 2024, type: "conference" as const },
+  { id: 5, title: "Leveraging Generative AI in Effective Medical Diagnostics and Delivery of Healthcare Services", authors: ["Dibyasankha Pal", "Dibyam Mondal", "Atisihek Gupta", "Keshab Kaushal", "Abhinuy Das", "Sudpta Sahana"], journal: "2nd International Conference on Human-Centric Smart Computing on 25th July & 26th July, 2024", year: 2024, type: "conference" as const },
+  { id: 6, title: "INTELLITRACK: A Realtime AI Based Employee Attendance and Recognition System", authors: ["Aniruddha Ghosh", "Barshani Dutta Soham Bera", "Sryan Majumder", "Diptarun Nanda", "Sobhan Panja"], journal: "7th International Conference On Interdisciplinary Research in Technology & Management (IRTM) 2024, 5th-7th December 2024, Kozhikode, Kerala, India", year: 2024, type: "conference" as const },
+  { id: 7, title: "LOGIOUS: An instant messaging (IM) platform using AI", authors: ["Aniruddha Ghosh", "Anurban Ghosh", "Souvik De", "Koustav Samanta", "Pratyush Das", "Rishab Banerjee"], journal: "2nd International Conference on Recent Advances in Artificial Intelligence & Smart Applications (RAAISA) 2024, December 14 – 15, 2024", year: 2024, type: "conference" as const },
+  { id: 8, title: "AI enabled Real-time Next Generation Attendance Monitoring System with Facial Recognition", authors: ["Sagnik Chatterjee", "Rony Hait", "Trina Chowdhury", "Sudpta Sahana"], journal: "2nd International Conference on Recent Advances in Artificial Intelligence & Smart Applications (RAAISA) 2024, December 14 – 15, 2024", year: 2024, type: "conference" as const },
+  { id: 9, title: "AI-Driven Thermal Imaging: A Comprehensive Web-Based Tool for Non-Invasive Medical Diagnostics", authors: ["Aniruddha Ghosh", "Sayan Singdha Pal", "Sumedha Das", "Sparidan Bhattacharya", "Arijit Bhattacharya", "Nilanjana De", "Sudpta Sahana"], journal: "3rd International Conference on Intelligent Systems, Advanced Computing and Communication (ISACC), 2025, 27-28 February 2025, Assam University, Silchar, India", year: 2025, type: "conference" as const },
+  { id: 10, title: "Aspect-Based Sentiment Analysis on Movie Reviews Using Machine Learning", authors: ["Riju Roy", "Gargee Das", "Srijan Dey", "Pratiba Dutta", "Debaliina Bagchi", "Anjan Kumar Payra"], journal: "3rd International Conference on Intelligent Systems, Advanced Computing and Communication (ISACC), 2025, 27-28 February 2025, Assam University, Silchar, India", year: 2025, type: "conference" as const },
+  { id: 11, title: "EcoSync: A Comprehensive Study on Water Quality Prediction and Waste Image Recognition", authors: ["Ahana Mukherjee", "Bipasa Chatterjee", "Indradeshi Das", "Koushik Chakraborty", "Madhushree", "Pramanik", "Anjan Kumar Payra"], journal: "3rd International Conference on Intelligent Systems, Advanced Computing and Communication (ISACC), 2025, 27-28 February 2025, Assam University, Silchar, India", year: 2025, type: "conference" as const },
+  { id: 12, title: "Steganographic Key embedding in AI generated Images", authors: ["Aniruddha Das", "Amogh Bagchi", "Swapneel Banerjee", "Sampurita Souchal", "Adrika Mondal"], journal: "3rd International Conference on Innovations in Software Architecture and Computational System, 2024, November 13and 14, Dr Sudhir Chandra Sur Institute of Technology and Sports Complex, India", year: 2024, type: "conference" as const, link: "https://drive.google.com/file/d/19Pij-SSl6I_fCmSf3C-nB1WI-EyVpX8N/view?usp=sharing" },
+  { id: 13, title: "Smart Trafic Monitoring System for rash biking with Raspberry Pi", authors: ["Aniruddha Das", "Barshani Ghosh", "Sreedeep Ghosh", "Soumyajeet Panda", "Souvik Mondal", "Uday Sankar De"], journal: "ICACITES 2024 19 in and 20 th Dec, I.T.S Engineering College Greater Noida, India", year: 2024, type: "conference" as const, link: "https://drive.google.com/file/d/1gok-W2TZnBUMFbXSpXY6Hfj5SelwH_T/view?usp=sharing" },
+  { id: 14, title: "Non-GPS Based Car Location Tracking System Using Deep Learning and IOT", authors: ["Samyak Gauri", "Soumyadeep Chakraborty", "Samya Goswami", "Sudpta Sahana"], journal: "The International Conference on Smart Mobility Systems (ICSMS 2025)", year: 2025, type: "conference" as const, link: "https://drive.google.com/file/d/1C19cz0F8BkmGelQ2kFA6Q9GBTSIE_ylw/view?usp=drive_link" },
+  { id: 15, title: "Solvelt: AI-Powered Mango and Disease Detection System with Interactive Chat Support", authors: ["Sayan Maiti", "Sanjana Chatterjee", "Souvik Dinda", "Urjun Banerjee", "Anjan Kumar Payra"], journal: "Intelligent Electrical Systems in Industrial Automation 2025 (Accepted)", year: 2025, type: "conference" as const, link: "https://drive.google.com/file/d/1JXBLg9np8X9pnB0FFH62g6hla-62gbea?usp=sharing" },
+  { id: 16, title: "Predicting Plant Diseases with Deep Learning", authors: ["Debdatta Chatterjee", "Dibyendu Ghosh", "Priyajit Deb"], journal: "Third International Conference on Intelligent and Secure Engineering Solutions (Accepted), CTSES 2025", year: 2025, type: "conference" as const },
+  { id: 17, title: "LLaMA 2-Based End-to-End Medical Chatbot", authors: ["Debdatta Chatterjee", "Ayomoy Nag", "Suryansh Chaubey", "Rudranil Ghosh", "Ayus Dutta", "Arpita Ghosh", "Muskan Das"], journal: "2nd National Conference on Research Advancements and Innovations in Computing, Communications, and Information Technologies, RAICCIT 2025, 12th April, 2025, Kalyani, WB, India", year: 2025, type: "conference" as const },
+  { id: 18, title: "AQI-Cast: An approach for Air Quality Index Prediction using Hybrid Deep Learning Models", authors: ["Anoushka Bhadra", "Ankush Dutta", "Harshit Srivastava"], journal: "IEEE International Conference on Artificial Intelligence and Emerging Technologies (ICAIET), XIM University, Bhubaneswar, India, 28th-30th of August 2025 (Accepted)", year: 2025, type: "conference" as const },
+  { id: 19, title: "Enhancing Flight Delay Prediction with a Spatio-Temporal Graph Attention Network: A Graph-Based Approach to modeling Airport Interdependencies", authors: ["Ankita Dey", "Riddhi Raj Ghosh", "Palash Das", "Atik Agarwala", "Avik Agarwala", "Sudpta Sahana"], journal: "Seventh International Conference on Computational Intelligence in Communications and Business Analytics, CICBA 2025, Jadavpur University, Kolkata, India, July 2025 (Accepted)", year: 2025, type: "conference" as const },
+  { id: 20, title: "Enhanced AI Framework for precise Crater Detection and Planetary Surface Analysis", authors: ["Sagnik Chatterjee", "Trina Chowdhury", "Rony Hait", "Arijit Das", "Sudpta Sahana"], journal: "Seventh International Conference on Computational Intelligence in Communications and Business Analytics, CICBA 2025, Jadavpur University, Kolkata, India, July 2025 (Accepted)", year: 2025, type: "conference" as const },
+  { id: 21, title: "Shortest Path Pattern Recognition for Medical Emergency Vehicular Control", authors: ["Adrish Dey", "Arghadeep Sarkar", "Aumidya Sundar Maity", "Ankush Roy", "Akanksha Yadav", "Anasuya Sengupta", "Aniruddha Ghosh", "Sudpta Sahana"], journal: "Seventh International Conference on Computational Intelligence in Communications and Business Analytics, CICBA 2025, Jadavpur University, Kolkata, India, July 2025 (Accepted)", year: 2025, type: "conference" as const },
+  { id: 22, title: "Comparative Analysis for Conversion of Double Base Number System (DBNS) from Conventional Number System using Binary Search Algorithm by changing Base patterns for ANN-based Applications", authors: ["Satrughna Singha", "Aniruddha Ghosh"], journal: "3rd International Conference on Advanced Computing and Applications (ICACA-2024) February, 23 – 24, 2024", year: 2024, type: "conference" as const },
+  { id: 23, title: "Beyond Flight: Investigating UAV Swarm Topology via Deep Learning and Metaheuristic Approach for Intruder Drone Detection", authors: ["Priti Mandal", "Harshit Srivastava", "Swami Kumar Das"], journal: "2nd International Conference on Recent Advances in Artificial Intelligence & Smart Applications (RAAISA) 2024, December 14 – 15, 2024", year: 2024, type: "conference" as const },
+  { id: 24, title: "Virtual Selection: Performing Pointer Based Interaction Techniques through Touchless Operation with OpenCV", authors: ["Jafeel Khan", "K. Adinarayana", "Gayatri", "Surya Tej Majji", "Manoharan Manas", "Shruti Pokkuluri", "E. Jagadeeswar Rao", "Harshit Srivastava"], journal: "2nd International Conference on Recent Advances in Artificial Intelligence & Smart Applications (RAAISA) 2024, December 14 – 15, 2024", year: 2024, type: "conference" as const },
+  { id: 25, title: "Parkinson: A Web-based Parkinson's Disease Detector based on Machine learning to detect the presence of Parkinson's Disease in human beings", authors: ["Debmitra Ghosh", "Sourjeish Nath", "Triasha Datta", "Afrin Bera", "Arya Bhattacharyya", "Dhrumpal Singh", "Soumolya Soumodhyay", "Sudpta Sahana"], journal: "International Conference on Smart Systems and Wireless Communication (SSWC) 2024, November 29 – 30, 2024", year: 2024, type: "conference" as const },
+  { id: 26, title: "Heart Disease Prediction by Machine Learning", authors: ["Anubhav Mishra", "Simran Sharma", "Saswanta Dutta", "Arijit Banerjee", "Anjan Kumar Payra", "Banani Saha", "Anupam Ghosh"], journal: "Machine Learning for Social Transformation. EAJT 2024. Lecture NOtes in Networks and Systems, vol 1131. Springer, Singapore", year: 2024, type: "conference" as const, doi: "https://doi.org/10.1007/978-981-97-7512-3_26" },
+  { id: 27, title: "Directed Interaction Network Prediction Using Functional Activity and Neighborhood Approach", authors: ["Anjan Kumar Payra", "Banani Saha", "Anupam Ghosh"], journal: "The International Conference on Web 6.0 and Industry 6.0 (WIN 6.0 2025), February 21st-22nd, 2025", year: 2025, type: "conference" as const },
+  { id: 28, title: "An Efficient Image Classification Technique using Transfer Learning Mechanism in the Context of Tumor Detection", authors: ["Anasuya Sengupta", "Alok Ranjan Pal"], journal: "2025 Fifth IEEE Sponsored International Conference on Advanced in Electrical, Communications and Sustainable Technologies (ICAECT 2025), 09 - 10, January 2025", year: 2025, type: "conference" as const },
+  { id: 29, title: "Multi-Modal AI for Mental Health Prediction and Intervention", authors: ["Anasuya Sengupta", "Suphriya Das", "Mayukh Neogi"], journal: "The International Conference on Web 6.0 and Industry 6.0 (WIN 6.0 2025), February 21st-22nd, 2025", year: 2025, type: "conference" as const },
+  { id: 30, title: "Essential Protein Identification Using Strategic Network Degree Centrality: A Human-Centered Approach", authors: ["Anjan Kumar Payra", "Khondekar Merajit Rivar", "Kunal Das", "Bipul Chakraborty", "Banani Saha", "Anupam Ghosh", "Samarjit Roy"], journal: "Doctoral Symposium on Human Centered Computing, 2024 (HUMAN - 2024), published: 1st May, 2025", year: 2025, type: "conference" as const },
+  { id: 31, title: "B92 protocol for Error correction and detection", authors: ["Debdatta Chatterjee", "Sanjoy Goswamajee"], journal: "Second International Conference on Security, Surveillance and Artificial Intelligence (ICSSAI-2025) (Accepted)", year: 2025, type: "conference" as const },
+  { id: 32, title: "Smart Traffic Management with Automated Rerouting and Congestion Detection with Sensor Technology", authors: ["Debdatta Chatterjee", "Sanjoy Bhattacharjee", "Dipankar Misra", "Kaushav Sharma", "Papri Ghosh"], journal: "Springer Nature", year: 2025, type: "book_chapter" as const },
+];
+
 export const patents = [
   { id: 1, title: "Attend-Ease: Face Recognition Based Automated Attendance Recording System", inventors: "Prof. (Dr.) Sudipta Sahana", applicationNo: "IN202541001234", year: 2025, status: "Filed" as const },
   { id: 2, title: "A System Based on Data Hiding Technique for Efficient Quality Access Control of Images and a Method Thereof", inventors: "Prof. (Dr.) Aniruddha Ghosh", applicationNo: "PCT/IN2025/050234", year: 2025, status: "Filed" as const },
@@ -260,26 +335,146 @@ export const phdScholars = [
 ];
 
 export const labs = [
-  { id: "ai-research-lab", name: "AI Research Lab", incharge: "Dr. Ananya Sharma", location: "Block A, Room 301", description: "State-of-the-art research lab equipped with high-performance GPU clusters for deep learning research in computer vision, NLP, and reinforcement learning.", equipment: [{ name: "NVIDIA DGX A100", model: "A100 80GB", quantity: 2 }, { name: "GPU Workstation", model: "RTX 4090 x4", quantity: 4 }, { name: "High-Memory Server", model: "256GB RAM", quantity: 2 }], coursesSupported: ["Deep Learning", "Computer Vision", "NLP", "Generative AI"] },
-  { id: "ml-systems-lab", name: "Machine Learning Systems Lab", incharge: "Dr. Vikram Patel", location: "Block A, Room 305", description: "Focused on ML infrastructure, model deployment, edge computing, and scalable distributed ML systems. Students work on real-world deployment pipelines.", equipment: [{ name: "Edge Computing Kit", model: "NVIDIA Jetson AGX Orin", quantity: 10 }, { name: "Raspberry Pi Cluster", model: "RPi 5", quantity: 20 }, { name: "Cloud Server Access", model: "AWS/GCP", quantity: 1 }], coursesSupported: ["ML Lab", "Big Data Analytics", "Edge AI", "Reinforcement Learning"] },
-  { id: "data-science-lab", name: "Data Science & Analytics Lab", incharge: "Dr. Priya Nair", location: "Block B, Room 201", description: "Lab for data preprocessing, statistical analysis, and large-scale data engineering. Equipped with workstations running Spark, Hadoop, and modern data stack.", equipment: [{ name: "Workstation", model: "Intel Xeon W-2295", quantity: 30 }, { name: "Storage Server", model: "100TB NAS", quantity: 1 }, { name: "Interactive Display", model: "85-inch 4K", quantity: 1 }], coursesSupported: ["Data Structures Lab", "Database Systems", "Big Data Analytics", "Probability & Statistics"] },
-  { id: "cv-robotics-lab", name: "Computer Vision & Robotics Lab", incharge: "Dr. Rajesh Kumar", location: "Block C, Room 102", description: "Research lab for 3D vision, autonomous navigation, and robotic manipulation. Features robotic arms, drones, and depth-sensing cameras.", equipment: [{ name: "Robotic Arm", model: "UR5e", quantity: 2 }, { name: "Autonomous Drone", model: "DJI Matrice 300", quantity: 1 }, { name: "Depth Camera", model: "Intel RealSense D455", quantity: 6 }, { name: "GPU Workstation", model: "RTX 3090 x2", quantity: 3 }], coursesSupported: ["Computer Vision", "Robotics", "Reinforcement Learning"] },
-  { id: "nlp-lab", name: "Natural Language Processing Lab", incharge: "Dr. Priya Nair", location: "Block B, Room 205", description: "Dedicated to NLP research including machine translation, text generation, and conversational AI. Access to large language model fine-tuning infrastructure.", equipment: [{ name: "GPU Server", model: "A6000 x4", quantity: 2 }, { name: "Annotation Workstation", model: "Dell Precision", quantity: 15 }, { name: "Smart Speaker Array", model: "For speech research", quantity: 5 }], coursesSupported: ["NLP", "Algorithms Lab", "Generative AI"] },
-  { id: "general-computing-lab", name: "General Computing Lab", incharge: "Dr. Siddharth Rao", location: "Block A, Room 101", description: "Teaching lab for undergraduate courses. 60 workstations with GPU access for programming assignments, algorithm design, and introductory ML experiments.", equipment: [{ name: "Student Workstation", model: "Core i7 + RTX 3060", quantity: 60 }, { name: "Projector", model: "4K Laser", quantity: 1 }, { name: "Whiteboard", model: "Interactive", quantity: 2 }], coursesSupported: ["Introduction to Programming", "Data Structures Lab", "Algorithms Lab", "ML Lab"] },
+  { 
+    id: "lab-1", 
+    name: "Computing Lab 1", 
+    incharge: "Prof. (Dr.) Sudipta Sahana", 
+    location: "B1 LG L3", 
+    description: "90 Systems with HP Tiny Desktop equipped with Intel Core i5 7th Gen Processor for programming and software development.", 
+    equipment: [
+      { name: "HP Tiny Desktop", model: "Intel(R) Core(TM) i5-9TH GEN", quantity: 90 },
+      { name: "Motherboard", model: "HP", quantity: 90 },
+      { name: "Hard Drive", model: "NVME HDD 256GB", quantity: 90 },
+      { name: "RAM", model: "CRUCIAL 8GB DDR4", quantity: 90 },
+      { name: "Monitor", model: "AOC(E1670S)", quantity: 90 },
+      { name: "Keyboard", model: "FRONTECH (JIL1672)", quantity: 90 },
+      { name: "Mouse", model: "FRONTECH(JIL3762)", quantity: 90 }
+    ], 
+    coursesSupported: ["Programming Lab", "Data Structures Lab", "Algorithm Lab", "Database Lab"]
+  },
+  { 
+    id: "lab-2", 
+    name: "Computing Lab 2", 
+    incharge: "Prof. (Dr.) Aniruddha Ghosh", 
+    location: "B1 LG L6", 
+    description: "80 Systems with HP Tiny Desktop equipped with Intel Core i5 7th Gen Processor for general computing and lab sessions.", 
+    equipment: [
+      { name: "HP Tiny Desktop", model: "Intel(R) Core(TM) i5-9TH GEN", quantity: 80 },
+      { name: "Motherboard", model: "HP", quantity: 80 },
+      { name: "Hard Drive", model: "NVME HDD 256GB", quantity: 80 },
+      { name: "RAM", model: "CRUCIAL 8GB DDR4", quantity: 80 },
+      { name: "Monitor", model: "AOC(E1670S)", quantity: 80 },
+      { name: "Keyboard", model: "FRONTECH (JIL1672)", quantity: 80 },
+      { name: "Mouse", model: "FRONTECH(JIL3762)", quantity: 80 }
+    ], 
+    coursesSupported: ["Web Development Lab", "Operating Systems Lab", "Software Engineering Lab"]
+  },
+  { 
+    id: "lab-3", 
+    name: "Computing Lab 3", 
+    incharge: "Prof. Anasuya Sengupta", 
+    location: "B2 LG 3 8", 
+    description: "80 Systems with HP Tiny Desktop equipped with Intel Core i5 7th Gen Processor for advanced computing labs.", 
+    equipment: [
+      { name: "HP Tiny Desktop", model: "Intel(R) Core(TM) i5-9TH GEN", quantity: 80 },
+      { name: "Motherboard", model: "HP", quantity: 80 },
+      { name: "Hard Drive", model: "NVME HDD 256GB", quantity: 80 },
+      { name: "RAM", model: "CRUCIAL 8GB DDR4", quantity: 80 },
+      { name: "Monitor", model: "AOC(E1670S)", quantity: 80 },
+      { name: "Keyboard", model: "FRONTECH (JIL1672)", quantity: 80 },
+      { name: "Mouse", model: "FRONTECH(JIL3762)", quantity: 80 }
+    ], 
+    coursesSupported: ["Machine Learning Lab", "Deep Learning Lab", "Computer Networks Lab"]
+  },
+  { 
+    id: "lab-4", 
+    name: "Computing Lab 4", 
+    incharge: "Prof. Anjan Kumar Payra", 
+    location: "B3 LG 3 8", 
+    description: "81 Systems with Dell Small Desktop equipped with Intel Core i5 9th Gen Processor for high-performance computing tasks.", 
+    equipment: [
+      { name: "Dell Small Desktop", model: "Intel(R) Core(TM) i5-9TH GEN", quantity: 81 },
+      { name: "Motherboard", model: "DELL", quantity: 81 },
+      { name: "Hard Drive", model: "NVME HDD 256GB", quantity: 81 },
+      { name: "RAM", model: "CRUCIAL 8GB DDR4", quantity: 81 },
+      { name: "Monitor", model: "AOC(E1670S)", quantity: 81 },
+      { name: "Keyboard", model: "HP", quantity: 81 },
+      { name: "Mouse", model: "HP", quantity: 81 }
+    ], 
+    coursesSupported: ["AI Lab", "Data Science Lab", "Computer Vision Lab"]
+  },
+  { 
+    id: "lab-5", 
+    name: "Computing Lab 5", 
+    incharge: "Prof. Debdatta Chatterjee", 
+    location: "B3 LG 5.5", 
+    description: "91 Systems with Dell Small Desktop equipped with Intel Core i5 9th Gen Processor for research and development.", 
+    equipment: [
+      { name: "Dell Small Desktop", model: "Intel(R) Core(TM) i5-9TH GEN", quantity: 91 },
+      { name: "Motherboard", model: "DELL", quantity: 91 },
+      { name: "Hard Drive", model: "NVME HDD 256GB", quantity: 91 },
+      { name: "RAM", model: "CRUCIAL 8GB DDR4", quantity: 91 },
+      { name: "Monitor", model: "AOC(E1670S)", quantity: 91 },
+      { name: "Keyboard", model: "HP", quantity: 91 },
+      { name: "Mouse", model: "HP", quantity: 91 }
+    ], 
+    coursesSupported: ["NLP Lab", "Pattern Recognition Lab", "Advanced AI Lab"]
+  },
+  { 
+    id: "digital-electronics-lab", 
+    name: "Digital Electronics Lab", 
+    incharge: "Prof. Dr. Himadri Sekhar Panda", 
+    location: "B2 LG 2.3, 2.4", 
+    description: "Digital Electronics Lab equipped with materials for hands-on learning in digital circuits and electronics systems.", 
+    equipment: [
+      { name: "Digital Electronics Kit", model: "As per Appendix XV-B", quantity: 1 }
+    ], 
+    coursesSupported: ["Digital Electronics", "Microprocessor Lab", "Embedded Systems Lab"]
+  },
 ];
 
 export const events = [
-  { id: 1, title: "HackSnippet 4.0", date: "2026-02-28", type: "Hackathon" as const, description: "Annual coding hackathon organized by the department.", speakers: [], venue: "TBA" },
-  { id: 2, title: "Innofusion 3.0", date: "2026-03-15", type: "Hackathon" as const, description: "Innovation and technology fusion event.", speakers: [], venue: "TBA" },
-  { id: 3, title: "RAAISA 3.0", date: "2025-12-15", type: "Conference" as const, description: "Research and Advances in AI and Smart Applications symposium.", speakers: [], venue: "Main Auditorium" },
-  { id: 4, title: "Innofusion 2.0", date: "2025-10-20", type: "Hackathon" as const, description: "Innovation and technology fusion event.", speakers: [], venue: "Seminar Hall" },
+  // Odd Semester 2024 (AY 2024-2025)
+  { id: 1, title: "Quiz Competition", date: "2024-07-25", type: "Competition" as const, description: "Tech quiz competition for students.", speakers: [], venue: "TBA", semester: "Odd Semester 2024" },
+  { id: 2, title: "Hackathon", date: "2024-07-27", endDate: "2024-07-28", type: "Hackathon" as const, description: "48-hour coding hackathon.", speakers: [], venue: "TBA", semester: "Odd Semester 2024" },
+  { id: 3, title: "Coding Competition", date: "2024-08-25", type: "Competition" as const, description: "Programming competition for all students.", speakers: [], venue: "TBA", semester: "Odd Semester 2024" },
+  { id: 4, title: "Project Competition", date: "2024-08-29", type: "Competition" as const, description: "Showcase of innovative student projects.", speakers: [], venue: "TBA", semester: "Odd Semester 2024" },
+  { id: 5, title: "Poster Competition", date: "2024-09-20", type: "Competition" as const, description: "Technical poster presentation competition.", speakers: [], venue: "TBA", semester: "Odd Semester 2024" },
+  { id: 6, title: "CSI Organized Workshop", date: "2024-09-28", type: "Workshop" as const, description: "Computer Society of India organized technical workshop.", speakers: [], venue: "TBA", semester: "Odd Semester 2024" },
+  
+  // Even Semester 2025 (AY 2024-2025)
+  { id: 7, title: "Quiz Competition", date: "2025-01-29", type: "Competition" as const, description: "Tech quiz competition for students.", speakers: [], venue: "TBA", semester: "Even Semester 2025" },
+  { id: 8, title: "Hackathon", date: "2025-02-08", type: "Hackathon" as const, description: "Innovation focused hackathon event.", speakers: [], venue: "TBA", semester: "Even Semester 2025" },
+  { id: 9, title: "Project Competition", date: "2025-03-11", endDate: "2025-03-17", type: "Competition" as const, description: "Week-long project showcase and competition.", speakers: [], venue: "TBA", semester: "Even Semester 2025" },
+  { id: 10, title: "Poster Competition", date: "2025-03-12", type: "Competition" as const, description: "Technical poster presentation competition.", speakers: [], venue: "TBA", semester: "Even Semester 2025" },
+  { id: 11, title: "Virtual Industrial Tour", date: "2025-03-18", type: "Workshop" as const, description: "Virtual tour of leading tech industries.", speakers: [], venue: "Online", semester: "Even Semester 2025" },
+  { id: 12, title: "CSI Organized Workshop", date: "2025-03-22", type: "Workshop" as const, description: "Computer Society of India organized technical workshop.", speakers: [], venue: "TBA", semester: "Even Semester 2025" },
+  { id: 13, title: "Coding Competition", date: "2025-04-06", type: "Competition" as const, description: "Programming competition for all students.", speakers: [], venue: "TBA", semester: "Even Semester 2025" },
+  
+  // Upcoming Events
+  { id: 14, title: "RAAISA 3.0", date: "2025-12-15", type: "Conference" as const, description: "Research and Advances in AI and Smart Applications symposium.", speakers: [], venue: "Main Auditorium", semester: "Upcoming" },
+  { id: 15, title: "Innofusion 2.0", date: "2025-10-20", type: "Hackathon" as const, description: "Innovation and technology fusion event.", speakers: [], venue: "Seminar Hall", semester: "Upcoming" },
+  { id: 16, title: "HackSnippet 4.0", date: "2026-02-28", type: "Hackathon" as const, description: "Annual coding hackathon organized by the department.", speakers: [], venue: "TBA", semester: "Upcoming", link: "https://hacksnippet.iem.edu.in/" },
+  { id: 17, title: "Innofusion 3.0", date: "2026-03-15", type: "Hackathon" as const, description: "Innovation and technology fusion event.", speakers: [], venue: "TBA", semester: "Upcoming", link: "https://www.innofusion.tech/" },
 ];
 
 export const placementStats = [
-  { year: "2025-26", studentsPlaced: 55, avgPackage: "₹18.5 LPA", highestPackage: "₹52 LPA", companiesVisited: 28 },
-  { year: "2024-25", studentsPlaced: 52, avgPackage: "₹16.8 LPA", highestPackage: "₹48 LPA", companiesVisited: 25 },
-  { year: "2023-24", studentsPlaced: 48, avgPackage: "₹14.2 LPA", highestPackage: "₹42 LPA", companiesVisited: 22 },
-  { year: "2022-23", studentsPlaced: 42, avgPackage: "₹12.5 LPA", highestPackage: "₹38 LPA", companiesVisited: 18 },
+  { 
+    batch: "2021-2025", 
+    totalStudents: 185, 
+    eligibleStudents: 121, 
+    eligibilityCriteria: "70% in 10th, 12th, Semester average with no year gap",
+    studentsPlaced: 68,
+    placementPercentage: 56.2
+  },
+];
+
+export const higherEducation = [
+  { name: "Sumedha Das", batch: "2021-2025", program: "M.Tech", institution: "Indian Institute of Technology, Bhilai" },
+  { name: "Rajdeep Mondal", batch: "2021-2025", program: "M.Tech", institution: "Calcutta University" },
+  { name: "Irfan Wahid", batch: "2021-2025", program: "MBA", institution: "" },
+  { name: "Ishan Roy", batch: "2021-2025", program: "M.Tech", institution: "SRM University" },
+  { name: "Sanjana Chatterjee", batch: "2021-2025", program: "M.Tech", institution: "IEM" },
 ];
 
 export const placementTestimonials = [
@@ -294,6 +489,91 @@ export const industryMous = [
   { company: "TCS Research", date: "2023", purpose: "Industry internships and collaborative AI projects" },
   { company: "Infosys Springboard", date: "2022", purpose: "Curriculum co-development and student mentoring" },
   { company: "Robert Bosch", date: "2024", purpose: "Autonomous systems research collaboration" },
+];
+
+export const industryCollaborations = [
+  {
+    id: 1,
+    organization: "Asian Institute of Technology, Thailand",
+    location: "Thailand",
+    yearSigned: 2024,
+    duration: "2025-2030",
+    participants: { engaged: 14, total: 40 },
+    activities: [
+      "Study Abroad Programs",
+      "Faculty Development Initiatives", 
+      "International Conference Participation",
+      "Research Collaboration"
+    ],
+    outcomes: [
+      { activity: "Study Abroad", description: "14 students from the department participated in study abroad programs" },
+      { activity: "Faculty Development", description: "Faculty enrichment through international exposure and training" },
+      { activity: "International Conference", description: "Joint participation in international conferences" }
+    ]
+  },
+  {
+    id: 2,
+    organization: "Center for Promotion of Indian Sacred Culture",
+    location: "Pune",
+    yearSigned: 2025,
+    duration: "2025-2030",
+    participants: { engaged: 6, total: 6 },
+    activities: [
+      "Cutting-edge Courses",
+      "Joint Research Projects",
+      "Faculty Development Programs",
+      "Innovation and Entrepreneurship Initiatives"
+    ],
+    outcomes: [
+      { activity: "Research Collaboration", description: "Joint research initiatives in AI and cultural heritage preservation" },
+      { activity: "Course Development", description: "Development of specialized courses integrating AI with cultural studies" },
+      { activity: "Innovation Programs", description: "Student and faculty participation in innovation sessions" }
+    ]
+  },
+  {
+    id: 3,
+    organization: "COE, Webel Fujisoft Vara",
+    location: "West Bengal",
+    yearSigned: 2024,
+    duration: "2024-2026",
+    participants: { engaged: 22, total: 22 },
+    activities: [
+      "Joint Research Projects",
+      "Proof of Concept (PoC) Development",
+      "Mentorship Programs",
+      "Patent Filing Support",
+      "Student Internships",
+      "Industry Training"
+    ],
+    outcomes: [
+      { activity: "PoC Development", description: "Students worked on 3 industry-sponsored Proof of Concept projects" },
+      { activity: "Internships", description: "22 students completed internships resulting in real-world project experience" },
+      { activity: "Mentorship", description: "Ongoing mentorship by industry experts on emerging technologies" },
+      { activity: "Patent Guidance", description: "Support for patent filing and intellectual property development" }
+    ]
+  },
+  {
+    id: 4,
+    organization: "Ambilio Technologies Pvt Ltd",
+    location: "Bengaluru",
+    yearSigned: 2024,
+    duration: "2024-2026",
+    participants: { engaged: 27, total: 27 },
+    activities: [
+      "Joint Research Projects",
+      "Proof of Concept Development",
+      "Technical Mentorship",
+      "Patent Filing Support",
+      "Internship Programs",
+      "Specialized Training Sessions"
+    ],
+    outcomes: [
+      { activity: "Industry Projects", description: "Students worked on 4 live industry projects in AI and ML domains" },
+      { activity: "Internships", description: "27 students completed summer internships with hands-on exposure to production systems" },
+      { activity: "Training Sessions", description: "Regular training sessions on cloud computing, DevOps, and MLOps" },
+      { activity: "Expert Sessions", description: "Monthly expert sessions on industry best practices and emerging trends" }
+    ]
+  }
 ];
 
 export const achievements = {
@@ -436,6 +716,7 @@ export const navLinks = [
       { label: "Funded Projects", href: "/research/projects" },
       { label: "Publications", href: "/research/publications" },
       { label: "Patents", href: "/research/patents" },
+      { label: "Notable Final Year Projects", href: "/research/final-year-projects" },
       { label: "Ph.D. Scholars", href: "/research/phd-scholars" },
     ],
   },

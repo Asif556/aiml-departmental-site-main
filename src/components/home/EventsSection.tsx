@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ArrowRight, Calendar } from "lucide-react";
+import { ArrowRight, Calendar, ExternalLink } from "lucide-react";
 import { events } from "@/data/departmentData";
 
 const formatDate = (dateStr: string) => {
@@ -48,9 +48,19 @@ const EventsSection = () => {
                   <h3 className="font-display font-bold text-sm text-foreground mb-1 leading-snug">
                     {event.title}
                   </h3>
-                  <p className="text-xs text-muted-foreground font-body line-clamp-2">
+                  <p className="text-xs text-muted-foreground font-body line-clamp-2 mb-2">
                     {event.description}
                   </p>
+                  {event.link && (
+                    <a 
+                      href={event.link} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 text-[10px] font-semibold text-primary hover:text-primary-light transition-colors font-body"
+                    >
+                      Visit Website <ExternalLink className="w-2.5 h-2.5" />
+                    </a>
+                  )}
                 </div>
               </div>
             </div>

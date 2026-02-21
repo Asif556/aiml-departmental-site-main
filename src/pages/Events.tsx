@@ -1,8 +1,8 @@
 import { useState } from "react";
-import { Calendar, MapPin, Users } from "lucide-react";
+import { Calendar, MapPin, Users, ExternalLink } from "lucide-react";
 import { events } from "@/data/departmentData";
 
-const eventTypes = ["All", "Workshop", "Seminar", "Hackathon", "Conference"] as const;
+const eventTypes = ["All", "Workshop", "Competition", "Hackathon", "Conference"] as const;
 
 const Events = () => {
   const [typeFilter, setTypeFilter] = useState("All");
@@ -48,6 +48,7 @@ const Events = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {filtered.map((e) => {
               const d = new Date(e.date);
+              const endD = e.endDate ? new Date(e.endDate) : null;
               return (
                 <div key={e.id} className="bg-card border border-border rounded-lg overflow-hidden card-hover">
                   <div className="flex">
@@ -55,20 +56,47 @@ const Events = () => {
                       <span className="font-mono font-bold text-2xl">{d.getDate()}</span>
                       <span className="text-xs uppercase font-body">{d.toLocaleString("default", { month: "short" })}</span>
                       <span className="text-xs font-body opacity-70">{d.getFullYear()}</span>
+                      {endD && (
+                        <>
+                          <div className="w-8 h-px bg-primary-foreground/30 my-1" />
+                          <span className="font-mono font-bold text-lg">{endD.getDate()}</span>
+                          <span className="text-[10px] uppercase font-body">{endD.toLocaleString("default", { month: "short" })}</span>
+                        </>
+                      )}
                     </div>
                     <div className="p-5 flex-1">
-                      <span className={`text-[10px] font-semibold px-2 py-0.5 rounded-full font-body ${
-                        e.type === "Workshop" ? "bg-blue-100 text-blue-800"
-                        : e.type === "Hackathon" ? "bg-purple-100 text-purple-800"
-                        : e.type === "Conference" ? "bg-green-100 text-green-800"
-                        : "bg-amber-100 text-amber-800"
-                      }`}>{e.type}</span>
-                      <h3 className="font-display font-bold text-base text-foreground mt-2 mb-2">{e.title}</h3>
+                      <div className="flex items-center gap-2 mb-2">
+                        <span className={`text-[10px] font-semibold px-2 py-0.5 rounded-full font-body ${
+                          e.type === "Workshop" ? "bg-blue-100 text-blue-800"
+                          : e.type === "Hackathon" ? "bg-purple-100 text-purple-800"
+                          : e.type === "Conference" ? "bg-green-100 text-green-800"
+                          : e.type === "Competition" ? "bg-orange-100 text-orange-800"
+                          : "bg-amber-100 text-amber-800"
+                        }`}>{e.type}</span>
+                        {e.semester && (
+                          <span className="text-[10px] font-medium text-muted-foreground font-body">
+                            {e.semester}
+                          </span>
+                        )}
+                      </div>
+                      <h3 className="font-display font-bold text-base text-foreground mb-2">{e.title}</h3>
                       <p className="text-sm text-muted-foreground font-body mb-3 line-clamp-2">{e.description}</p>
-                      <div className="flex items-center gap-4 text-xs text-muted-foreground font-body">
-                        {e.venue && <span className="flex items-center gap-1"><MapPin className="w-3 h-3" /> {e.venue}</span>}
-                        {e.speakers && e.speakers.length > 0 && (
-                          <span className="flex items-center gap-1"><Users className="w-3 h-3" /> {e.speakers.join(", ")}</span>
+                      <div className="flex items-center justify-between gap-4">
+                        <div className="flex items-center gap-4 text-xs text-muted-foreground font-body">
+                          {e.venue && <span className="flex items-center gap-1"><MapPin className="w-3 h-3" /> {e.venue}</span>}
+                          {e.speakers && e.speakers.length > 0 && (
+                            <span className="flex items-center gap-1"><Users className="w-3 h-3" /> {e.speakers.join(", ")}</span>
+                          )}
+                        </div>
+                        {e.link && (
+                          <a 
+                            href={e.link} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-1 text-xs font-semibold text-primary hover:text-primary-light transition-colors font-body"
+                          >
+                            Visit Site <ExternalLink className="w-3 h-3" />
+                          </a>
                         )}
                       </div>
                     </div>

@@ -13,7 +13,7 @@ const HeroSection = () => (
       style={{
         backgroundImage: `url(${heroBg})`,
         backgroundSize: "cover",
-        backgroundPosition: "center",
+        backgroundPosition: "right 15%",
       }}
     />
 

@@ -15,6 +15,7 @@ import ResearchProjects from "./pages/ResearchProjects";
 import ResearchPublications from "./pages/ResearchPublications";
 import ResearchPatents from "./pages/ResearchPatents";
 import PhdScholars from "./pages/PhdScholars";
+import FinalYearProjects from "./pages/FinalYearProjects";
 import AcademicsOverview from "./pages/AcademicsOverview";
 import AcademicsPrograms from "./pages/AcademicsPrograms";
 import Labs from "./pages/Labs";
@@ -55,6 +56,7 @@ const App = () => (
             <Route path="/research/publications" element={<ResearchPublications />} />
             <Route path="/research/patents" element={<ResearchPatents />} />
             <Route path="/research/phd-scholars" element={<PhdScholars />} />
+            <Route path="/research/final-year-projects" element={<FinalYearProjects />} />
             <Route path="/labs" element={<Labs />} />
             <Route path="/labs/:id" element={<LabDetail />} />
             <Route path="/placements" element={<Placements />} />

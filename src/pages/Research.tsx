@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ArrowRight, FlaskConical, BookOpen, FileText, GraduationCap, Brain, Eye, Network, Database, Shield, Bot } from "lucide-react";
+import { ArrowRight, FlaskConical, BookOpen, FileText, GraduationCap, Brain, Eye, Network, Database, Shield, Bot, Lightbulb } from "lucide-react";
 import { researchHighlights } from "@/data/departmentData";
 
 const researchAreas = [
@@ -38,12 +38,13 @@ const Research = () => (
 
         {/* Stats */}
         <div className="bg-primary rounded-lg p-8 mb-16">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-6 text-center">
             {[
               { val: "18", label: "Funded Projects" },
-              { val: "180+", label: "Publications" },
-              { val: "5", label: "Patents" },
-              { val: "12", label: "PhD Scholars" },
+              { val: "210+", label: "Publications" },
+              { val: "9", label: "Patents" },
+              { val: "37", label: "Notable Final Year Projects" },
+              { val: "8", label: "PhD Scholars" },
             ].map((s) => (
               <div key={s.label}>
                 <div className="font-mono font-bold text-3xl text-primary-foreground">{s.val}</div>
@@ -59,6 +60,7 @@ const Research = () => (
             { icon: FlaskConical, label: "Funded Projects", href: "/research/projects" },
             { icon: BookOpen, label: "Publications", href: "/research/publications" },
             { icon: FileText, label: "Patents", href: "/research/patents" },
+            { icon: Lightbulb, label: "Notable Final Year Projects", href: "/research/final-year-projects" },
             { icon: GraduationCap, label: "Ph.D. Scholars", href: "/research/phd-scholars" },
           ].map((link) => (
             <Link
