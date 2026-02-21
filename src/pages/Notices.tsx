@@ -31,7 +31,7 @@ const Notices = () => {
             {notices.filter(n => n.isImportant).map((n) => (
               <div key={n.id} className="flex items-start gap-3 py-2 border-b border-accent/10 last:border-0">
                 <span className="font-mono text-xs text-muted-foreground shrink-0">
-                  {new Date(n.date).toLocaleDateString("en-IN", { month: "short", day: "numeric" })}
+                  {new Date(n.publishedDate || n.date).toLocaleDateString("en-IN", { month: "short", day: "numeric" })}
                 </span>
                 <p className="text-sm font-medium text-foreground font-body">{n.title}</p>
               </div>
@@ -77,7 +77,7 @@ const Notices = () => {
                 }`}
               >
                 <div className="font-mono text-xs text-muted-foreground shrink-0 pt-0.5">
-                  {new Date(n.date).toLocaleDateString("en-IN", { month: "short", day: "numeric", year: "numeric" })}
+                  {new Date(n.publishedDate || n.date).toLocaleDateString("en-IN", { month: "short", day: "numeric", year: "numeric" })}
                 </div>
                 <div className="flex-1">
                   <span className="text-[10px] uppercase tracking-wider text-accent font-bold font-body mr-2">{n.category}</span>

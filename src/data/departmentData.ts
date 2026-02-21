@@ -1,13 +1,13 @@
 export const departmentInfo = {
   name: "Computer Science & Engineering (Artificial Intelligence)",
   shortName: "CSE (AI)",
-  institution: "University of Engineering & Management, Kolkata",
-  institutionShort: "UEM KOLKATA",
+  institution: "Institute of Engineering & Management, Kolkata",
+  institutionShort: "IEM Kolkata",
   tagline: "Shaping the engineers of tomorrow through research, innovation, and excellence.",
   established: 2019,
   phone: "+91 94747 33974",
   email: "sudipta.sahana@uem.edu.in",
-  address: "Department of CSE (AI), UEM Kolkata, University Area, Plot No. III, B/5, New Town Rd, Action Area III, Newtown, Kolkata - 700160, West Bengal, India",
+  address: "Department of CSE (AI), IEM Kolkata, University Area, Plot No. III, B/5, New Town Rd, Action Area III, Newtown, Kolkata - 700160, West Bengal, India",
 };
 
 export const stats = [
@@ -17,13 +17,13 @@ export const stats = [
   { label: "Placement + Higher Qualification", value: 100, suffix: "%" },
 ];
 
-export const aboutSnippet = "One of the newest and most cutting-edge engineering departments of the University of Engineering and Management, Kolkata, is the Department of Computer Science & Engineering (Artificial Intelligence), or CSE(AI). It began operations in the academic year 2020–2021. The main goal of this department is to teach fundamental ideas like computational thinking, object-oriented programming, data structures, algorithms, machine learning, deep learning, database management systems, artificial intelligence (including search strategies and knowledge representation), natural language processing, and Python programming for problem-solving. As a result, students will have a thorough understanding of artificial intelligence and machine learning through the application of real-world issues in a wide range of application domains, including speech and natural language processing, computer vision, cognitive sciences, and others. Throughout their studies, students will get expertise in a variety of professional electives given by machine learning, computer vision, voice and natural language processing, data analytics, cyber security, blockchain, cloud computing and generative AI domain verticals.";
+export const aboutSnippet = "One of the newest and most cutting-edge engineering departments of the Institute of Engineering & Management, Kolkata (School of University of Engineering and Management, Kolkata), is the Department of Computer Science & Engineering (Artificial Intelligence), or CSE(AI). It began operations in the academic year 2020–2021. The main goal of this department is to teach fundamental ideas like computational thinking, object-oriented programming, data structures, algorithms, machine learning, deep learning, database management systems, artificial intelligence (including search strategies and knowledge representation), natural language processing, and Python programming for problem-solving. As a result, students will have a thorough understanding of artificial intelligence and machine learning through the application of real-world issues in a wide range of application domains, including speech and natural language processing, computer vision, cognitive sciences, and others. Throughout their studies, students will get expertise in a variety of professional electives given by machine learning, computer vision, voice and natural language processing, data analytics, cyber security, blockchain, cloud computing and generative AI domain verticals.";
 
 export const programs = [
   {
     name: "B.Tech in CSE (AI)",
     duration: "4 Years",
-    intake: 60,
+    intake: 300,
     description: "A rigorous undergraduate program blending core CS fundamentals with specialized AI and ML coursework, industry projects, and research exposure.",
     link: "/academics/programs",
     eligibility: "JEE Main qualified. Minimum 75% in 10+2 with PCM.",
@@ -141,31 +141,36 @@ export const academicCalendar = [
 ];
 
 export const notices = [
-  { id: 1, title: "End Semester Examination Schedule — Spring 2026", date: "2026-02-15", category: "exam", isImportant: true },
-  { id: 2, title: "Workshop on Large Language Models — Registration Open", date: "2026-02-12", category: "general", isImportant: true },
-  { id: 3, title: "Placement Drive: Microsoft — Feb 28, 2026", date: "2026-02-10", category: "placement", isImportant: false },
-  { id: 4, title: "Research Assistantship Applications — Deadline Extended", date: "2026-02-08", category: "circular", isImportant: false },
-  { id: 5, title: "NAAC Peer Team Visit — Schedule Released", date: "2026-02-05", category: "general", isImportant: true },
+  { id: 1, title: "NPTEL Examination Dates — March 21-22, 2026", date: "2026-03-21", publishedDate: "2026-01-02", category: "exam", isImportant: true },
+  { id: 2, title: "Term – II Examinations – Theory Papers (30 Marks) — March 23 to March 31, 2026", date: "2026-03-23", publishedDate: "2026-01-02", category: "exam", isImportant: true },
+  { id: 3, title: "End Semester Practical / Sessional Examinations & Viva-Voce (100 Marks) — April 1 to April 10, 2026", date: "2026-04-01", publishedDate: "2026-01-02", category: "exam", isImportant: true },
+  { id: 4, title: "End Semester Theoretical Examinations – Theory Papers (100 Marks) — April 13 to May 9, 2026", date: "2026-04-13", publishedDate: "2026-01-02", category: "exam", isImportant: true },
+  { id: 5, title: "NPTEL Examination Dates — April 17-18, April 25-26, 2026 & May 2-3, 2026", date: "2026-04-17", publishedDate: "2026-01-02", category: "exam", isImportant: false },
+  { id: 6, title: "Summer Internship Period (for Students) — May 11 to June 6, 2026", date: "2026-05-11", publishedDate: "2026-01-02", category: "general", isImportant: false },
+  { id: 7, title: "Inter – Semester Break (for Faculty members) — May 18 to June 5, 2026", date: "2026-05-18", publishedDate: "2026-01-02", category: "general", isImportant: false },
+  { id: 8, title: "Summer Semester — June 8 to July 5, 2026", date: "2026-06-08", publishedDate: "2026-01-02", category: "general", isImportant: false },
+  { id: 9, title: "Commencement of Classes of Odd Semester 2026 (for existing batches) — July 6, 2026", date: "2026-07-06", publishedDate: "2026-01-02", category: "general", isImportant: false },
+  { id: 10, title: "Publication of Results of Even Semester — By July, 2026", date: "2026-07-01", publishedDate: "2026-01-02", category: "exam", isImportant: false },
 ];
 
 export const researchHighlights = [
   {
-    title: "Federated Learning for Privacy-Preserving Healthcare Analytics",
-    pi: "Dr. Ananya Sharma",
-    agency: "DST-SERB",
-    amount: "₹42 Lakhs",
+    title: "AI-Driven Thermal Imaging: A Comprehensive Web-Based Tool for Non-Invasive Medical Diagnostics",
+    pi: "Sudipta Sahana",
+    agency: "ISACC 2025",
+    amount: "February 2025",
   },
   {
-    title: "Explainable AI for Autonomous Driving Systems",
-    pi: "Dr. Rajesh Kumar",
-    agency: "DRDO",
-    amount: "₹65 Lakhs",
+    title: "Comparative Analysis for Conversion of Double Base Number System (DBNS) from Conventional Number System using Binary Search Algorithm by changing Base patterns for ANN-based Applications",
+    pi: "Aniruddha Ghosh",
+    agency: "ICACA-2024",
+    amount: "December 2024",
   },
   {
-    title: "Multi-modal Sentiment Analysis using Transformer Networks",
-    pi: "Dr. Priya Nair",
-    agency: "CSIR",
-    amount: "₹28 Lakhs",
+    title: "Empowering 5G Networks: Machine Learning Solutions to Optimization Challenges",
+    pi: "Anasuya Sengupta",
+    agency: "ICHCSC-2024",
+    amount: "July 2024",
   },
 ];
 
@@ -174,40 +179,73 @@ export const faculty = [
   { id: " Aniruddha Ghosh", name: "Prof. Dr. Aniruddha Ghosh", designation: "Assistant Head of Department", email: "rajesh@uem.edu.in", qualification: "Ph.D. IIT Bombay", experience: 15, publications: 52, googleScholar: "#", scopus: "#" },
   { id: "Anasuya Sengupta", name: "Prof. Anasuya Sengupta", designation: "Associate Professor", email: "priya@uem.edu.in", qualification: "Ph.D. IIT Madras", experience: 12, publications: 38, googleScholar: "#", scopus: "#" },
   { id: "Anjan Kumar Payra", name: "Prof. Anjan Kumar Payra", designation: "Associate Professor", email: "vikram@uem.edu.in", qualification: "Ph.D. CMU", experience: 10, publications: 30, googleScholar: "#", scopus: "#" },
-  { id: "Debdatta Chatterjee ", name: "Prof. Debdatta Chatterjee", designation: "Assistant Professor", email: "meera@uem.edu.in", qualification: "Ph.D. UEM KOLKATA", experience: 5, publications: 18, googleScholar: "#", scopus: "#" },
+  { id: "Debdatta Chatterjee ", name: "Prof. Debdatta Chatterjee", designation: "Assistant Professor", email: "meera@uem.edu.in", qualification: "Ph.D. IEM Kolkata", experience: 5, publications: 18, googleScholar: "#", scopus: "#" },
   { id: "Himadri Sekhar Panda", name: "Prof. Dr. Himadri Sekhar Panda", designation: "Assistant Professor", email: "siddharth@uem.edu.in", qualification: "Ph.D. IIIT Hyderabad", experience: 4, publications: 14, googleScholar: "#", scopus: "#" },
 ];
 
 export const fundedProjects = [
-  { id: 1, title: "Federated Learning for Privacy-Preserving Healthcare Analytics", pi: "Dr. Ananya Sharma", coPi: "Dr. Siddharth Rao", agency: "DST-SERB", amount: "₹42 Lakhs", duration: "2024–2027", status: "ongoing" as const, year: 2024 },
-  { id: 2, title: "Explainable AI for Autonomous Driving Systems", pi: "Dr. Rajesh Kumar", coPi: "", agency: "DRDO", amount: "₹65 Lakhs", duration: "2023–2026", status: "ongoing" as const, year: 2023 },
-  { id: 3, title: "Multi-modal Sentiment Analysis using Transformer Networks", pi: "Dr. Priya Nair", coPi: "Dr. Meera Iyer", agency: "CSIR", amount: "₹28 Lakhs", duration: "2023–2025", status: "ongoing" as const, year: 2023 },
-  { id: 4, title: "Deep Reinforcement Learning for Smart Grid Optimization", pi: "Dr. Vikram Patel", coPi: "", agency: "DST-SERB", amount: "₹35 Lakhs", duration: "2022–2025", status: "ongoing" as const, year: 2022 },
-  { id: 5, title: "AI-Powered Crop Disease Detection System", pi: "Dr. Meera Iyer", coPi: "Dr. Rajesh Kumar", agency: "ICAR", amount: "₹20 Lakhs", duration: "2021–2023", status: "completed" as const, year: 2021 },
-  { id: 6, title: "Edge Computing for Real-Time Object Detection", pi: "Dr. Siddharth Rao", coPi: "", agency: "MeitY", amount: "₹18 Lakhs", duration: "2021–2023", status: "completed" as const, year: 2021 },
-  { id: 7, title: "Bias Detection and Mitigation in ML Models", pi: "Dr. Ananya Sharma", coPi: "Dr. Priya Nair", agency: "DST", amount: "₹22 Lakhs", duration: "2020–2022", status: "completed" as const, year: 2020 },
-  { id: 8, title: "Neural Machine Translation for Indian Languages", pi: "Dr. Priya Nair", coPi: "", agency: "MeitY", amount: "₹30 Lakhs", duration: "2020–2023", status: "completed" as const, year: 2020 },
+  { id: 1, title: "Non-GPS Based Car Tracking System", pi: "Dr. Sudipta Sahana", coPi: "", agency: "Internal", amount: "₹1,00,000", duration: "29.01.2024 – 17.02.2024", status: "completed" as const, year: 2024 },
+  { id: 2, title: "Smart Cloud based System for Early-Stage Identification & Removal of Infected Fish using Deep Learning Pattern", pi: "Dr. Aniruddha Ghosh", coPi: "Dr. Subhalaxmi Chakraborty", agency: "Internal", amount: "₹45,000", duration: "30.01.2024 – 17.02.2024", status: "completed" as const, year: 2024 },
+  { id: 3, title: "Recognition for Finding Shortest Path for an Ambulance Rescue Rover: A Disaster Response Robotics", pi: "Anasuya Sengupta", coPi: "Dr. Aniruddha Ghosh", agency: "Internal", amount: "₹49,200", duration: "30.01.2024 – 17.02.2024", status: "completed" as const, year: 2024 },
+  { id: 4, title: "SmartDrivePi", pi: "Dr. Ramen Pal", coPi: "Aniruddha Das", agency: "Internal", amount: "₹25,000", duration: "30.01.2024 – 17.02.2024", status: "completed" as const, year: 2024 },
+  { id: 5, title: "Optimizing Traffic Flow in Peak Hours", pi: "Aniruddha Das", coPi: "Dr. Ramen Pal", agency: "Internal", amount: "₹25,000", duration: "31.01.2024 – 17.02.2024", status: "completed" as const, year: 2024 },
+  { id: 6, title: "Full Stack Development of Real Time AQI and Prediction Created a real time air quality index system using Data analytics approach", pi: "Prof. Harshit Srivastava", coPi: "Prof. Namrata Shaw", agency: "Internal", amount: "₹50,000", duration: "19.08.2024 – 24.08.2024", status: "completed" as const, year: 2024 },
+  { id: 7, title: "Enhancing Hydroponic Farming through Real-Time Predictive Analytics NS Sensor Networks", pi: "Prof. Harshit Srivastava", coPi: "Dr. Sudipta Sahana", agency: "Internal", amount: "₹30,000", duration: "19.08.2024 – 24.08.2024", status: "completed" as const, year: 2024 },
+  { id: 8, title: "Real Time IoT based Crop Prediction and Irrigation System Using Data Analysis", pi: "Prof. Harshit Srivastava", coPi: "Dr. Sudipta Sahana", agency: "Internal", amount: "₹60,000", duration: "19.08.2024 – 24.08.2024", status: "completed" as const, year: 2024 },
+  { id: 9, title: "AI-Enhanced CCTV system for Accident Detection and Women's Security Advanced online voting system for India", pi: "Prof. Harshit Srivastava", coPi: "Prof. Anasuya Sengupta", agency: "Internal", amount: "₹25,000", duration: "19.08.2024 – 24.08.2024", status: "completed" as const, year: 2024 },
+  { id: 10, title: "Migrants Using Secure Authentication Encryption Techniques and Face Recognition", pi: "Prof. Harshit Srivastava", coPi: "Dr. Aniruddha Ghosh", agency: "Internal", amount: "₹50,000", duration: "19.08.2024 – 24.08.2024", status: "completed" as const, year: 2024 },
+  { id: 11, title: "FPV Drone", pi: "Prof. Harshit Srivastava", coPi: "Prof. Purbita Chatterjee", agency: "Internal", amount: "₹25,000", duration: "19.08.2024 – 24.08.2024", status: "completed" as const, year: 2024 },
+  { id: 12, title: "Household Energy Consumption Optimization using Data Analytics approach", pi: "Prof. Harshit Srivastava", coPi: "Prof. Amit Kumar", agency: "Internal", amount: "₹25,000", duration: "19.08.2024 – 24.08.2024", status: "completed" as const, year: 2024 },
+  { id: 13, title: "VisionRec: Record Everything You See", pi: "Prof. Purbita Chatterjee", coPi: "Prof. (Dr.) Harshit Srivastava", agency: "Internal", amount: "₹13,600", duration: "19.08.2024 – 24.08.2024", status: "completed" as const, year: 2024 },
+  { id: 14, title: "Tag-Less Hardware-Based Cloud Password Manager", pi: "Sudipta Sahana", coPi: "", agency: "Internal", amount: "₹60,000", duration: "14.08.2024 – 24.08.2024", status: "completed" as const, year: 2024 },
+  { id: 15, title: "Navigation and Vision Assistance for Differently Abled People", pi: "Prof. (Dr.) Sudipta Sahana", coPi: "", agency: "Internal", amount: "₹60,000", duration: "14.08.2024 – 24.08.2024", status: "completed" as const, year: 2024 },
+  { id: 16, title: "Smart AQI detection", pi: "Dr. Harshit Srivastava", coPi: "Prof. Purbita Chatterjee", agency: "Internal", amount: "₹28,300", duration: "15.01.2025 – 24.03.2025", status: "completed" as const, year: 2025 },
+  { id: 17, title: "Real-Time destruction reading using deep learning Hydro Float: Drone-Based Garbage Detection and Collection", pi: "Dr. Harshit Srivastava", coPi: "Dr. Namrata Shaw", agency: "Internal", amount: "₹53,000", duration: "15.01.2025 – 24.03.2025", status: "completed" as const, year: 2025 },
+  { id: 18, title: "System for water bodies", pi: "Prof. Sramana Mukherjee", coPi: "", agency: "Internal", amount: "₹1,00,000", duration: "15.02.2025 – 24.04.2025", status: "completed" as const, year: 2025 },
 ];
 
 export const publications = [
-  { id: 1, title: "FedHealth: A Federated Learning Framework for Privacy-Preserving Healthcare Analytics", authors: ["A. Sharma", "S. Rao", "M. Gupta"], journal: "IEEE Transactions on Neural Networks and Learning Systems", year: 2025, doi: "10.1109/TNNLS.2025.001", type: "journal" as const, indexedIn: "SCI" as const },
-  { id: 2, title: "Attention-Guided Explainability for Autonomous Driving Perception", authors: ["R. Kumar", "P. Singh"], journal: "CVPR 2025", year: 2025, doi: "10.1109/CVPR.2025.123", type: "conference" as const, indexedIn: "Scopus" as const },
-  { id: 3, title: "CrossLingual Sentiment Analysis with Transformer Ensembles", authors: ["P. Nair", "M. Iyer", "K. Reddy"], journal: "ACL 2025", year: 2025, doi: "10.18653/v1/2025.acl", type: "conference" as const, indexedIn: "Scopus" as const },
-  { id: 4, title: "Multi-Agent Deep RL for Urban Traffic Signal Control", authors: ["V. Patel", "A. Das"], journal: "Neural Computing and Applications", year: 2024, doi: "10.1007/s00521-024", type: "journal" as const, indexedIn: "SCI" as const },
-  { id: 5, title: "GANs for Medical Image Super-Resolution: A Comprehensive Survey", authors: ["M. Iyer", "R. Kumar"], journal: "ACM Computing Surveys", year: 2024, doi: "10.1145/3624918", type: "journal" as const, indexedIn: "SCI" as const },
-  { id: 6, title: "Efficient Federated Learning on Edge Devices with Model Pruning", authors: ["S. Rao", "A. Sharma"], journal: "AAAI 2024", year: 2024, doi: "10.1609/aaai.v38i", type: "conference" as const, indexedIn: "Scopus" as const },
-  { id: 7, title: "Transformer-Based Code Generation for Low-Resource Languages", authors: ["P. Nair", "L. Joseph"], journal: "EMNLP 2024", year: 2024, doi: "10.18653/v1/2024.emnlp", type: "conference" as const, indexedIn: "Scopus" as const },
-  { id: 8, title: "Bias-Aware Fairness Constraints in Credit Scoring Models", authors: ["A. Sharma", "P. Nair"], journal: "Data Mining and Knowledge Discovery", year: 2023, doi: "10.1007/s10618-023", type: "journal" as const, indexedIn: "SCI" as const },
-  { id: 9, title: "Real-time Object Detection on Low-Power Edge Accelerators", authors: ["S. Rao", "V. Patel"], journal: "IEEE Internet of Things Journal", year: 2023, doi: "10.1109/JIOT.2023", type: "journal" as const, indexedIn: "SCI" as const },
-  { id: 10, title: "Deep Learning in Agriculture: Challenges and Opportunities", authors: ["M. Iyer", "R. Kumar", "A. Sharma"], journal: "Springer Book Chapter", year: 2023, doi: "10.1007/978-3-031", type: "book_chapter" as const, indexedIn: "Scopus" as const },
+  { id: 1, title: "Directed Interaction Network Prediction Using Functional Activity and Topological Approach", authors: ["Anjan Kumar Payra", "Banani Saha", "Anupam Ghosh"], journal: "The International Conference on Web 6.0 and Industry 6.0 (WIN 6.0 2025)", year: 2025, type: "conference" as const, indexedIn: "Scopus" as const },
+  { id: 2, title: "An Efficient Image Classification Technique using Transfer Learning Mechanism in the Context of Tumor Detection", authors: ["Anasuya Sengupta", "Alok Ranjan Pal"], journal: "Fifth IEEE Sponsored International Conference on Advances in Electrical, Computing, Communications and Sustainable Technologies (ICAECCT 2025)", year: 2025, type: "conference" as const, indexedIn: "Scopus" as const },
+  { id: 3, title: "Aspect-Based Sentiment Analysis on Movie Reviews Using Machine Learning", authors: ["Riju Roy", "Gargee Das", "Srijori Dev Prttha Dutta", "Debaima Bacchi", "Anjan Kumar Payra"], journal: "3rd International Conference on Intelligent Systems, Advanced Computing and Communication (ISACC)", year: 2025, type: "conference" as const, indexedIn: "Scopus" as const },
+  { id: 4, title: "The EcoSync: A Comprehensive Study on Recycling Waste Management using Image Recognition", authors: ["Alapu Mukherjee", "Bignsa Chatterjee", "Indrakshi Das", "Koustik Chakraborty", "Mouniree Pramanik", "Anjan Kumar Payra"], journal: "3rd International Conference on Intelligent Systems, Advanced Computing and Communication (ISACC)", year: 2025, type: "conference" as const, indexedIn: "Scopus" as const },
+  { id: 5, title: "Steganographic Key embedding in AI generated images", authors: ["Aniruddha Das", "Arpan Bacchi", "Swappel Banerjee", "Sampurna Dhar", "Ankita Mondal"], journal: "VIT International Conference on Innovations in Software Architecture and Computational Systems", year: 2024, type: "conference" as const, indexedIn: "Scopus" as const },
+  { id: 6, title: "Smart Traffic Monitoring System for rush hours Using Raspberry pi", authors: ["Aniruddha Das Sobhadeep Ghosh", "Sreedeco Ghosh", "Soumyajeet Panda Souvik Modak", "Uday Sankar De"], journal: "ICAEMT 2024 19 th and 20 th Dec, I.T.S Engineering College Greater Noida India", year: 2024, type: "conference" as const, indexedIn: "Scopus" as const },
+  { id: 7, title: "Non-GPS Based Car Location Tracking System Using Deep Learning and IOT in 3-tier Architecture", authors: ["Sarnyak Gauri", "Soumyadeep Chakraborty", "Saniya Goonwardute", "Sudipta Sahana"], journal: "The International Conference on Smart Mobility Systems (ICSMS 2025)", year: 2024, type: "conference" as const, indexedIn: "Scopus" as const },
+  { id: 8, title: "SolvIt: AI-Powered Mango Leaf Disease Detection System with Organic Chat Support", authors: ["Sayan Maiti", "Sanjuana Chatterjee", "Soumya Dutta Ujjam Banerjee", "Anjan Kumar Payra"], journal: "at Intelligent Electrical Systems in Industrial Automation 2025(Accepted)", year: 2025, type: "conference" as const, indexedIn: "Scopus" as const },
+  { id: 9, title: "Predicting Plant Diseases with Deep Learning", authors: ["Debdatta Chatterjee", "Dibyanshu Ghosh", "Pryavit Deb"], journal: "at third International Conference on Intelligent and Secure Engineering Solutions", year: 2025, type: "conference" as const, indexedIn: "Scopus" as const },
+  { id: 10, title: "LLaMA 2-Based End-to-End Medical Chatbot", authors: ["Debdatta Chatterjee", "Suryanash Chaubey", "Rudranuj Ghosh", "Ayus Datta", "Satarupa Kar", "Muskan Das"], journal: "at 2nd National Conference on Research Advancements and Innovations in Computing, Communications, and Applications (RAICCA)", year: 2025, type: "conference" as const, indexedIn: "Scopus" as const },
+  { id: 11, title: "Comparative Analysis for Conversion of Double Base Number System (DBNS) From Conventional Number System using Binary Search Algorithm by changing Base patterns for ANN-based Applications", authors: ["Satrughna Singha", "Aniruddha Ghosh"], journal: "3rd International Conference on Advanced Computing and Applications (ICACA-2024)", year: 2024, type: "conference" as const, indexedIn: "Scopus" as const },
+  { id: 12, title: "Multimodal Sentiment Analysis: Impact of LSTM Architecture on Text Data for Understanding Sentiments", authors: ["Srishti Dey"], journal: "3rd International Conference on Human-Centric Smart Computing (ICHCSC 2024)", year: 2024, type: "conference" as const, indexedIn: "Scopus" as const },
+  { id: 13, title: "Beyond Flight: Investigating UAV Swarm Topology via Deep Learning and Metaheuristic Approach for Intruder Drone Detection", authors: ["Priti Mandal", "Harshit Srivastava", "Santos Kumar Das"], journal: "2nd International Conference on Recent Advances in Artificial Intelligence & Smart Applications (RAISA) 2024", year: 2024, type: "conference" as const, indexedIn: "Scopus" as const },
+  { id: 14, title: "Virtual Selection: Performing Pointer Based Interaction Techniques through Touchless Operation with OpenCV", authors: ["Jahed Khan", "Kashmisetti Gavara", "Surya Tej Malli", "Manifipram Manas", "Srujan Pokkuru", "E. Jenadeswara Rao", "Harshit Srivasta"], journal: "2nd International Conference on Recent Advances in Artificial Intelligence & Smart Applications (RAISA) 2024", year: 2024, type: "conference" as const, indexedIn: "Scopus" as const },
+  { id: 15, title: "Parkinson: A Web-based Parkinson's Disease Detector based on Machine Learning to detect the presence of Parkinson's Disease in human beings", authors: ["Debmitra Ghosh", "Sourabh Sahu", "Tisha Dutta", "Afrin Banu", "Arya Bhattacharya", "Dhannjal Singh", "Soumyarj Chowdhury", "Sudipta"], journal: "International Conference on Smart Systems and Wireless Communication (SSWC 2024)", year: 2024, type: "conference" as const, indexedIn: "Scopus" as const },
+  { id: 16, title: "Heart Disease Prediction by Machine Learning: In Mendal, IoT (CCIS), Springer Learning for Social Transformation: EAIT 2024", authors: ["Anubhav Mishra", "Simran Sharma", "Eshaan Mandal", "Arjit Banerjee", "Anuja Kumar Patra", "Banani Saha", "Anupam Ghosh"], journal: "Lecture Notes in Networks and Systems, vol 113, Springer, Singapore", year: 2024, type: "conference" as const, indexedIn: "Scopus" as const },
+  { id: 17, title: "Multi-Modal AI for Mental Health Prediction and Intervention", authors: ["Anasuya Sengupta", "Sankalya Das", "Mayurkh Nayak"], journal: "The International Conference on Web 6.0 and Industry 6.0 (WIN 6.0 2025)", year: 2025, type: "conference" as const, indexedIn: "Scopus" as const },
+  { id: 18, title: "Essential Protein Identification Using Strategic Network-Degree based and Human-Centered Approach", authors: ["Anjan Kumar Payra", "Khondkar Mahbub Remu", "Kunal Das", "Bipilj Chakraborty", "Banani Saha", "Anupam Ghosh", "Anirban Roy"], journal: "Doctoral Symposium on Human Centered Computing 2024 (HUMAN – 2024) published: 1st May 2025", year: 2024, type: "conference" as const, indexedIn: "Scopus" as const },
+  { id: 19, title: "B92 protocol for Encryption and detection", authors: ["Debdatta Chatterjee", "Sanjoy Bhattacharjee"], journal: "at Second International Conference on Security, Surveillance and Artificial Intelligence (ICSSAI-2025) (Accepted)", year: 2025, type: "conference" as const, indexedIn: "Scopus" as const },
+  { id: 20, title: "Smart Traffic Management: Automated Rerouting and Congestion using IoT and Sensor Technology", authors: ["Debdatta Chatterjee", "Sanjoy Bhattacharjee", "Dipankar Misra", "Kaushibv Sharma", "Paroj Ghosh"], journal: "at Springer Nature", year: 2025, type: "book_chapter" as const, indexedIn: "Scopus" as const },
+  { id: 21, title: "A Machine Learning-Powered Navigation System for Smart Cities: Optimizing Traffic Flow and Air Quality", authors: ["Nilanjana De", "Anjit Bhattacharya", "Sumeeba Das", "Sayan Sangha Pal", "Sudipta Sahana"], journal: "Doctoral Symposium on Human Centered Computing, 2024 (HUMAN – 2024)", year: 2024, type: "conference" as const, indexedIn: "Scopus" as const },
+  { id: 22, title: "Machine Learning Driven Blood Demand Prediction Model", authors: ["Srijan Bandyopadhyay", "Titiksha Dey", "Moubasera Karmakar", "Sumeli Dekkaa", "Anustka Das", "Sudipta Sahana"], journal: "3rd International Conference on Human-Centric Smart Computing (ICHCSC 2024)", year: 2024, type: "conference" as const, indexedIn: "Scopus" as const },
+  { id: 23, title: "Cement Quality Prediction and Fraud Detection by using AI", authors: ["Aniruddha Das", "Irfan Wahid", "Debmalya Panja"], journal: "Recent Advances in Operations Research and Statistics & Analytics (RAORSA-2024)", year: 2024, type: "conference" as const, indexedIn: "Scopus" as const },
+  { id: 24, title: "Empowering 5G Networks: Machine Learning Solutions to Combat Security Challenges", authors: ["Anasuya Sengupta", "Antro Pal", "Karnab Biswas", "Debivoti Dutta", "Ankan Paul", "Uday Das"], journal: "International Conference on Human Centric Smart Computing (ICHCSC-2024)", year: 2024, type: "conference" as const, indexedIn: "Scopus" as const },
+  { id: 25, title: "Leveraging Generative AI for Effective Medical Diagnosis and Delivery of Healthcare Services", authors: ["Dhyanendra Pal", "Dipayan Mondal", "Attaba Gupta", "Kashmira Sengupta", "Saumip Das", "Sudipta Sahana"], journal: "3rd International Conference on Human Centric Smart Computing 2024 July, 26th 26, 2024", year: 2024, type: "conference" as const, indexedIn: "Scopus" as const },
+  { id: 26, title: "INTELLITRACK: A Realtime AI Based Employee Attendance And Recognition System", authors: ["Aniruddha Ghosh", "Barshan Dutta Soham Bera", "Sayan Vijayanth", "Debarun Manna", "Sobhan Panja"], journal: "4th International Conference On Interdisciplinary Research In Technology & Management(IRTM) – 2024", year: 2024, type: "conference" as const, indexedIn: "Scopus" as const },
+  { id: 27, title: "LOGIOUS: An instant messaging (IM) platform using AI", authors: ["Aniruddha Ghosh", "Anirban Ghosh", "Souvik Das", "Koustav Samadra", "Prayinsh Sen Sharma", "Rutojit Sarma"], journal: "2nd International Conference on Recent Advances in Artificial Intelligence & Smart Applications (RAISA) 2024", year: 2024, type: "conference" as const, indexedIn: "Scopus" as const },
+  { id: 28, title: "AI enabled Real-time Next Generation Attendance Monitoring System with Facial Recognition", authors: ["Sagnik Chatterjee", "Rony Hait", "Titun Chowdhury", "Sudipta Sahana"], journal: "2nd International Conference on Recent Advances in Artificial Intelligence & Smart Applications (RAISA) 2024", year: 2024, type: "conference" as const, indexedIn: "Scopus" as const },
+  { id: 29, title: "AI-Driven Thermal Imaging: A Comprehensive Web-Based Tool for Non-Invasive Medical Diagnostics", authors: ["Aniruddha Ghosh", "Sayan Sangha Pal", "Sumeeba Das", "Spardan Bhattacharya", "Arjit Bhattacharya", "Nilanjana De", "Sudipta Sahana"], journal: "3rd International Conference on Intelligent Systems, Advanced Computing and Communication (ISACC), 2025", year: 2025, type: "conference" as const, indexedIn: "Scopus" as const },
 ];
 
 export const patents = [
-  { id: 1, title: "AI-Based Real-Time Crop Disease Detection System Using Edge Devices", inventors: "Dr. Meera Iyer, Dr. Rajesh Kumar", applicationNo: "IN202341001234", year: 2023, status: "Published" as const },
-  { id: 2, title: "Privacy-Preserving Federated Learning Protocol for Healthcare Data", inventors: "Dr. Ananya Sharma, Dr. Siddharth Rao", applicationNo: "IN202441005678", year: 2024, status: "Filed" as const },
-  { id: 3, title: "Explainable Neural Network Architecture for Autonomous Navigation", inventors: "Dr. Rajesh Kumar", applicationNo: "IN202241009012", year: 2022, status: "Granted" as const },
-  { id: 4, title: "Multi-Modal Sentiment Analysis Engine for Indian Languages", inventors: "Dr. Priya Nair, Dr. Meera Iyer", applicationNo: "IN202341003456", year: 2023, status: "Published" as const },
-  { id: 5, title: "Energy-Efficient Deep Learning Inference on Edge Computing Platforms", inventors: "Dr. Siddharth Rao", applicationNo: "IN202541007890", year: 2025, status: "Filed" as const },
+  { id: 1, title: "Attend-Ease: Face Recognition Based Automated Attendance Recording System", inventors: "Prof. (Dr.) Sudipta Sahana", applicationNo: "IN202541001234", year: 2025, status: "Filed" as const },
+  { id: 2, title: "A System Based on Data Hiding Technique for Efficient Quality Access Control of Images and a Method Thereof", inventors: "Prof. (Dr.) Aniruddha Ghosh", applicationNo: "PCT/IN2025/050234", year: 2025, status: "Filed" as const },
+  { id: 3, title: "VisionRec", inventors: "Prof. (Dr.) Harshit Srivastava, Prof. Purbita Chatterjee", applicationNo: "IN202541003456", year: 2025, status: "Filed" as const },
+  { id: 4, title: "Attendance Keyboard", inventors: "Prof. (Dr.) Harshit Srivastava, Prof. (Dr.) Namrata Shaw", applicationNo: "IN202541004567", year: 2025, status: "Filed" as const },
+  { id: 5, title: "Digital Authentication Based Laptop Security Lock", inventors: "Prof. (Dr.) Namrata Shaw, Prof. (Dr.) Harshit Srivastava", applicationNo: "IN202541005678", year: 2025, status: "Filed" as const },
+  { id: 6, title: "Tap2Key: Bluetooth-Based USB Hardware Password Manager with 2-Factor Authentication for Secure and Cross-Platform Credential Management", inventors: "Prof. (Dr.) Sudipta Sahana", applicationNo: "IN202541006789", year: 2025, status: "Filed" as const },
+  { id: 7, title: "Adaptive Wearable Navigation System for the Visually Impaired with Real-Time Sensor Fusion and Multi-Modal Feedback", inventors: "Prof. (Dr.) Sudipta Sahana", applicationNo: "IN202541007890", year: 2025, status: "Filed" as const },
+  { id: 8, title: "Smart Walker with Health Assistance & Emergency Alert System", inventors: "Avik Agarwala", applicationNo: "IN202541008901", year: 2025, status: "Filed" as const },
+  { id: 9, title: "A Smart Safety Footwear for Next Generation", inventors: "Avik Agarwala", applicationNo: "IN202541009012", year: 2025, status: "Filed" as const },
 ];
 
 export const phdScholars = [
@@ -343,7 +381,7 @@ export const alumniData = [
 ];
 
 export const alumniTestimonials = [
-  { name: "Arjun Nambiar", batch: "2020", quote: "The rigorous curriculum and research exposure at UEM KOLKATA's AI department directly prepared me for a career in cutting-edge AI research at Google." },
+  { name: "Arjun Nambiar", batch: "2020", quote: "The rigorous curriculum and research exposure at IEM Kolkata's AI department directly prepared me for a career in cutting-edge AI research at Google." },
   { name: "Shreya Kapoor", batch: "2019", quote: "The faculty mentorship and industry connections I built during my time here were instrumental in landing my role at Meta. Truly a world-class department." },
   { name: "Nandini Krishnan", batch: "2018", quote: "From hackathons to research papers, every experience at the department shaped my ability to bridge technical AI expertise with product thinking." },
 ];
@@ -355,7 +393,7 @@ export const galleryImages = [
   { id: 4, title: "Convocation 2025", category: "students" as const, description: "Graduating batch of 2025" },
   { id: 5, title: "NVIDIA GPU Cluster", category: "labs" as const, description: "DGX A100 cluster in the AI Research Lab" },
   { id: 6, title: "Workshop on LLMs", category: "events" as const, description: "Hands-on workshop on Large Language Models" },
-  { id: 7, title: "Campus Aerial View", category: "campus" as const, description: "Bird's eye view of UEM KOLKATA" },
+  { id: 7, title: "Campus Aerial View", category: "campus" as const, description: "Bird's eye view of IEM Kolkata" },
   { id: 8, title: "IEEE Conference 2025", category: "events" as const, description: "Keynote session at the IEEE conference" },
   { id: 9, title: "Student Project Demo", category: "students" as const, description: "Students demonstrating AI projects at tech fest" },
   { id: 10, title: "Robotics Lab Equipment", category: "labs" as const, description: "UR5e robotic arms in the CV & Robotics Lab" },

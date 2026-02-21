@@ -61,7 +61,7 @@ const NoticesSection = () => {
               }`}
             >
               <div className="bg-primary/10 text-primary rounded-md px-3 py-1.5 text-xs font-mono font-bold shrink-0">
-                {formatDate(notice.date)}
+                {formatDate(notice.publishedDate || notice.date)}
               </div>
               <div className="flex-1 min-w-0">
                 <span className="text-[10px] uppercase tracking-wider text-accent font-bold font-body mr-2">
