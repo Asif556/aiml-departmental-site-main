@@ -324,14 +324,36 @@ export const patents = [
 ];
 
 export const phdScholars = [
-  { id: 1, name: "Rahul Menon", supervisor: "Dr. Ananya Sharma", coSupervisor: "Dr. Siddharth Rao", topic: "Federated Meta-Learning for Heterogeneous Medical Data", yearOfJoining: 2022, status: "ongoing" as const },
-  { id: 2, name: "Deepika Joshi", supervisor: "Dr. Rajesh Kumar", coSupervisor: "", topic: "Unsupervised Domain Adaptation in Autonomous Driving Scenarios", yearOfJoining: 2021, status: "ongoing" as const },
-  { id: 3, name: "Arun Krishnan", supervisor: "Dr. Priya Nair", coSupervisor: "", topic: "Cross-Lingual Transfer Learning for Low-Resource Indian Languages", yearOfJoining: 2021, status: "ongoing" as const },
-  { id: 4, name: "Sneha Patil", supervisor: "Dr. Vikram Patel", coSupervisor: "Dr. Rajesh Kumar", topic: "Safe Multi-Agent Reinforcement Learning for Autonomous Systems", yearOfJoining: 2023, status: "ongoing" as const },
-  { id: 5, name: "Karthik Raman", supervisor: "Dr. Meera Iyer", coSupervisor: "", topic: "Conditional Diffusion Models for High-Fidelity Image Synthesis", yearOfJoining: 2023, status: "ongoing" as const },
-  { id: 6, name: "Anjali Desai", supervisor: "Dr. Ananya Sharma", coSupervisor: "", topic: "Fairness-Aware Machine Learning in Financial Services", yearOfJoining: 2020, status: "awarded" as const },
-  { id: 7, name: "Manoj Hegde", supervisor: "Dr. Rajesh Kumar", coSupervisor: "", topic: "Monocular 3D Object Detection Using Transformers", yearOfJoining: 2019, status: "awarded" as const },
-  { id: 8, name: "Preethi Sundaram", supervisor: "Dr. Priya Nair", coSupervisor: "", topic: "Aspect-Based Sentiment Analysis with Graph Neural Networks", yearOfJoining: 2019, status: "awarded" as const },
+  { 
+    id: 1, 
+    enrolmentNumber: "12017008013010",
+    name: "Sudipto Kumar Mondal", 
+    supervisor: "Prof. (Dr.) Sudipta Sahana", 
+    coSupervisor: "", 
+    topic: "", 
+    yearOfJoining: 2024, 
+    status: "ongoing" as const 
+  },
+  { 
+    id: 2, 
+    enrolmentNumber: "12022008013008",
+    name: "Sudipa Biswas", 
+    supervisor: "Prof. (Dr.) Sudipta Sahana", 
+    coSupervisor: "Dr. Buddhadeb Pradhan", 
+    topic: "", 
+    yearOfJoining: 2023, 
+    status: "ongoing" as const 
+  },
+  { 
+    id: 3, 
+    enrolmentNumber: "12023008013005",
+    name: "Amitava Poddar", 
+    supervisor: "Prof. (Dr.) Sudipta Sahana", 
+    coSupervisor: "", 
+    topic: "", 
+    yearOfJoining: 2023, 
+    status: "ongoing" as const 
+  },
 ];
 
 export const labs = [

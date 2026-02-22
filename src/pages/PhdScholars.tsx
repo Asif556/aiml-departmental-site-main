@@ -47,10 +47,17 @@ const PhdScholars = () => {
                         {s.status}
                       </span>
                     </div>
+                    {(s as any).enrolmentNumber && (
+                      <p className="text-xs text-muted-foreground font-body mb-1">
+                        Enrolment No: {(s as any).enrolmentNumber}
+                      </p>
+                    )}
                     <p className="text-xs text-muted-foreground font-body mb-2">
                       Supervisor: {s.supervisor}{s.coSupervisor && ` · Co-supervisor: ${s.coSupervisor}`}
                     </p>
-                    <p className="text-sm text-foreground/80 font-body italic">"{s.topic}"</p>
+                    {s.topic && (
+                      <p className="text-sm text-foreground/80 font-body italic mb-2">"{s.topic}"</p>
+                    )}
                     <p className="text-xs text-muted-foreground font-body mt-2">Joined: {s.yearOfJoining}</p>
                   </div>
                 </div>
