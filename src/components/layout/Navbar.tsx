@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, ChevronDown, Search } from "lucide-react";
 import { navLinks, departmentInfo } from "@/data/departmentData";
+import uemLogo from "@/assets/UEM_LOGO.png";
 
 const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -26,17 +27,25 @@ const Navbar = () => {
         scrolled ? "shadow-md backdrop-blur-sm bg-card/95" : ""
       }`}
     >
-      <div className="container flex items-center justify-between h-[68px]">
-        {/* Logo */}
-        <Link to="/" className="flex items-center gap-2 shrink-0">
-          <div className="px-2 h-9 rounded-md bg-primary flex items-center justify-center text-primary-foreground font-mono font-bold text-xs">
-            CSE(AI)
-          </div>
-          <div className="hidden sm:block">
-            <div className="font-display font-bold text-sm text-foreground leading-tight">{departmentInfo.shortName}</div>
-            <div className="text-[11px] text-muted-foreground">{departmentInfo.institutionShort}</div>
-          </div>
-        </Link>
+      <div className="flex items-center h-[68px]">
+        {/* Logos at extreme left */}
+        <div className="flex items-center gap-2 pl-2 shrink-0">
+          <img src="/IEM.png" alt="IEM Logo" className="h-10 w-auto" />
+          <img src={uemLogo} alt="UEM Logo" className="h-8 w-auto" />
+        </div>
+
+        {/* Rest of navbar in container */}
+        <div className="flex items-center justify-center h-full flex-1">
+          {/* Logo Section */}
+          <Link to="/" className="flex items-center gap-2 shrink-0">
+            <div className="px-2 h-9 rounded-md bg-primary flex items-center justify-center text-primary-foreground font-mono font-bold text-xs">
+              CSE(AI)
+            </div>
+            <div className="hidden sm:block">
+              <div className="font-display font-bold text-sm text-foreground leading-tight">{departmentInfo.shortName}</div>
+              <div className="text-[11px] text-muted-foreground">{departmentInfo.institutionShort}</div>
+            </div>
+          </Link>
 
         {/* Desktop Nav */}
         <div className="hidden lg:flex items-center gap-1">
@@ -88,6 +97,7 @@ const Navbar = () => {
             {mobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
           </button>
         </div>
+      </div>
       </div>
 
       {/* Mobile Menu */}
