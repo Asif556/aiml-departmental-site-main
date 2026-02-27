@@ -46,9 +46,7 @@ const Contact = () => {
                 <table className="w-full text-sm font-body">
                   <tbody>
                     {[
-                      { name: "Dr. Ananya Sharma", role: "Head of Department", email: "hod.cseaiml@uem.edu.in" },
-                      { name: "Mr. Ramesh B.", role: "Administrative Officer", email: "admin.cseaiml@uem.edu.in" },
-                      { name: "Dr. Vikram Patel", role: "Placement Coordinator", email: "placement.cseaiml@uem.edu.in" },
+                      { name: "Dr. Sudipta Sahana", role: "Head of Department", email: "sudipta.sahana@uem.edu.in" }
                     ].map((c) => (
                       <tr key={c.name} className="border-b border-border last:border-0">
                         <td className="px-4 py-3 font-medium text-foreground">{c.name}</td>
